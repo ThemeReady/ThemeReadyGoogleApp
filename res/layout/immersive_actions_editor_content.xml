@@ -11,5 +11,5 @@
             <include layout="@layout/immersive_actions_editor_labeled_footer" />
         </com.google.android.apps.gsa.staticplugins.immersiveactions.ImmersiveActionsMinHeightLayout>
     </com.google.android.apps.gsa.staticplugins.immersiveactions.ImmersiveActionsListenableScrollView>
-    <View android:id="@id/immersive_actions_arguments_disabled_ui" android:background="#b3ffffff" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/immersive_actions_arguments_disabled_ui" android:background="@color/quick_action_separator_white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </FrameLayout>

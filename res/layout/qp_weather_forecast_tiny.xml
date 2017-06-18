@@ -16,6 +16,6 @@
         </LinearLayout>
     </LinearLayout>
     <FrameLayout android:layout_gravity="center|right" android:id="@id/card_action_container" android:background="@drawable/qp_clickable_module_background" android:layout_width="@dimen/lotic_cap_hit_button_size" android:layout_height="@dimen/lotic_cap_hit_button_size">
-        <ImageButton android:layout_gravity="center" android:id="@id/cap_menu_button" android:background="@null" android:clickable="false" android:layout_width="@dimen/lotic_cap_button_size" android:layout_height="@dimen/lotic_cap_button_size" android:src="@drawable/quantum_ic_more_vert_white_24" android:scaleType="fitCenter" android:tint="#ffcccccc" android:contentDescription="@string/accessibility_menu_button" />
+        <ImageButton android:layout_gravity="center" android:id="@id/cap_menu_button" android:background="@null" android:clickable="false" android:layout_width="@dimen/lotic_cap_button_size" android:layout_height="@dimen/lotic_cap_button_size" android:src="@drawable/quantum_ic_more_vert_white_24" android:scaleType="fitCenter" android:tint="@color/ime_retry_text" android:contentDescription="@string/accessibility_menu_button" />
     </FrameLayout>
 </LinearLayout>

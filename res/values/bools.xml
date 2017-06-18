@@ -48,7 +48,7 @@
     <bool name="suwUseTabletLayout">false</bool>
     <bool name="traditional_view_time_recording">true</bool>
     <bool name="udc_settings_cache_enabled">false</bool>
-    <bool name="use_full_bleed_voice_search">true</bool>
+    <bool name="use_full_bleed_voice_search">false</bool>
     <bool name="velour_service_exported">false</bool>
     <bool name="wifi_scan_uploads_enabled">true</bool>
 </resources>

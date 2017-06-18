@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/assistant_settings_no_device_linked_summary_text_size" android:textColor="@color/quantum_grey600" android:gravity="center" android:padding="@dimen/assistant_settings_no_linked_device_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/assistant_settings_no_device_linked" />
+    <TextView android:textSize="@dimen/assistant_settings_no_device_linked_summary_text_size" android:textColor="@color/card_title_text" android:gravity="center" android:padding="@dimen/assistant_settings_no_linked_device_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/assistant_settings_no_device_linked" />
 </LinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/explore_card_margins" android:layout_marginStart="@dimen/explore_card_margins" android:layout_marginEnd="@dimen/explore_card_margins" card_view:cardBackgroundColor="@android:color/white"
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/explore_card_margins" android:layout_marginStart="@dimen/explore_card_margins" android:layout_marginEnd="@dimen/explore_card_margins" card_view:cardBackgroundColor="@color/card_bg"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/explore_card_header_height">

@@ -3,9 +3,9 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_dogfood_color_18" />
-        <TextView android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Using SearchResultsActivity" />
+        <TextView android:textColor="@color/done_text_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Using SearchResultsActivity" />
     </LinearLayout>
     <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <TextView android:textColor="@android:color/black" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="File bugs @ go/nativesrpbug" />
+        <TextView android:textColor="@color/done_text_color_normal" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="File bugs @ go/nativesrpbug" />
     </LinearLayout>
 </LinearLayout>

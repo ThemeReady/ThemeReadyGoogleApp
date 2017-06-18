@@ -877,7 +877,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ag;->bwb:I
+    sget v2, Lcom/google/android/apps/gsa/staticplugins/opa/hj;->lps:I # @color/chatui_solid_background_fill
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 

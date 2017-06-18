@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:tag="ve=36597" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+<ScrollView android:tag="ve=36597" android:background="@color/lotic_carousel_logo_image_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:id="@id/disclosure_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/opa_error_margin">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:animateLayoutChanges="true">

@@ -753,7 +753,7 @@
     if-eqz p2, :cond_0
 
     .line 63
-    const v1, 0x106000b
+    const v1, 0x7f0d006f # @color/card_bg
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 

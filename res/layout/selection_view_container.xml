@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/selection_container" android:background="@android:color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<FrameLayout android:id="@id/selection_container" android:background="@color/quantum_greyblack1000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.google.android.apps.gsa.shared.ui.CoScrollContainer android:id="@id/selection_ui_coscrollcontainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <FrameLayout android:id="@id/selection_ui_container" android:layout_width="fill_parent" android:layout_height="fill_parent">

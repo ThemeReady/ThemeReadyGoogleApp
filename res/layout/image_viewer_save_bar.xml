@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.apps.gsa.plugins.images.viewer.ImageViewerSaveBar android:layout_gravity="bottom" android:id="@id/image_viewer_save_bar" android:background="@color/save_toast_background" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/save_bar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentStart="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/qp_text_w1" android:id="@id/save_bar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentStart="true" />
     <TextView android:textSize="15.0sp" android:textColor="@color/image_viewer_saved_text" android:id="@id/save_bar_link" android:tag="ve=15086;track:click" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_viewer_view_saved" android:maxLines="2" android:textAllCaps="true" android:layout_alignParentEnd="true" />
 </com.google.android.apps.gsa.plugins.images.viewer.ImageViewerSaveBar>
