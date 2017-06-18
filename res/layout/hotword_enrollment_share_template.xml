@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.gsa.shared.ui.FractionalLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/setup_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center|top" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/hotword_enrollment_header_text_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/HotwordEnrollmentGlifHeaderTitle" />
+        <TextView android:textSize="@dimen/hotword_enrollment_header_subtitle_smaller_text_size" android:textColor="@color/hotword_enrollment_secondary_text" android:id="@id/subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="6.0sp" style="@style/HotwordEnrollmentGlifHeaderTitle" />
+    </LinearLayout>
+    <include layout="@layout/hotword_enrollment_glif_button_bar" />
+</com.google.android.apps.gsa.shared.ui.FractionalLinearLayout>

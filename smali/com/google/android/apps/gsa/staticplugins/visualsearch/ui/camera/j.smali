@@ -1,0 +1,106 @@
+.class Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/j;
+.super Lcom/google/android/apps/gsa/shared/monet/b/b;
+.source "SourceFile"
+
+
+# instance fields
+.field public final synthetic nfm:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/j;->nfm:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;
+
+    invoke-direct {p0}, Lcom/google/android/apps/gsa/shared/monet/b/b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onPause()V
+    .locals 2
+
+    .prologue
+    .line 12
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/j;->nfm:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;
+
+    .line 13
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;->nff:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/z;
+
+    .line 14
+    invoke-virtual {v0}, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/z;->stop()V
+
+    .line 15
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/j;->nfm:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;
+
+    .line 16
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;->nfh:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;
+
+    .line 17
+    if-eqz v0, :cond_0
+
+    .line 18
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/j;->nfm:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;
+
+    .line 19
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;->nfh:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;
+
+    .line 21
+    iget-object v1, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;->jFL:Landroid/hardware/SensorManager;
+
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;->nfz:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/w;
+
+    invoke-virtual {v1, v0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
+
+    .line 22
+    :cond_0
+    return-void
+.end method
+
+.method public final onResume()V
+    .locals 4
+
+    .prologue
+    .line 2
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/j;->nfm:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;
+
+    .line 3
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;->nfh:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;
+
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/j;->nfm:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;
+
+    .line 6
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/a;->nfh:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;
+
+    .line 8
+    iget-object v1, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;->jFL:Landroid/hardware/SensorManager;
+
+    iget-object v2, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;->nfz:Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/w;
+
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/visualsearch/ui/camera/u;->jFL:Landroid/hardware/SensorManager;
+
+    const/16 v3, 0xa
+
+    .line 9
+    invoke-virtual {v0, v3}, Landroid/hardware/SensorManager;->getDefaultSensor(I)Landroid/hardware/Sensor;
+
+    move-result-object v0
+
+    const/4 v3, 0x3
+
+    .line 10
+    invoke-virtual {v1, v2, v0, v3}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
+
+    .line 11
+    :cond_0
+    return-void
+.end method

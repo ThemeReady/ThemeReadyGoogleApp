@@ -1,0 +1,8 @@
+.class interface abstract Lcom/google/android/apps/gsa/plugins/images/viewer/dl;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract bx(Ljava/lang/String;)V
+.end method

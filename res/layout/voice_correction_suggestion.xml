@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/voice_correction_suggestion_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/suggestion" android:background="@drawable/bg_suggestion" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/text" style="@style/SuggestionText.VoiceCorrection" />
+    </LinearLayout>
+    <View android:id="@id/suggestion_divider" android:background="@color/suggestion_divider_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

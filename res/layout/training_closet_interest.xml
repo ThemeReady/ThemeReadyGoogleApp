@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/question_display" android:paddingLeft="@dimen/qp_column_padding" android:paddingRight="@dimen/qp_column_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeightSmall">
+        <ImageView android:layout_gravity="center" android:id="@android:id/icon" android:visibility="gone" android:layout_width="@dimen/training_closet_icon_size" android:layout_height="@dimen/training_closet_icon_size" android:layout_marginRight="18.0dip" android:contentDescription="@null" android:layout_marginEnd="18.0dip" />
+        <TextView android:textColor="@color/qp_text_b1" android:ellipsize="end" android:id="@id/name" android:paddingTop="@dimen/qp_closet_row_vertical_padding" android:paddingBottom="@dimen/qp_closet_row_vertical_padding" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" style="@style/qp_h4" />
+    </LinearLayout>
+    <ViewStub android:id="@id/question_edit_stub" android:inflatedId="@id/question_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,151 @@
+.class public final Lcom/google/android/apps/gsa/staticplugins/nowcards/i/w;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lc/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lc/b",
+        "<",
+        "Lcom/google/android/apps/gsa/staticplugins/nowcards/i/u;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final kpI:Ll/a/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ll/a/a",
+            "<",
+            "Lcom/google/android/apps/gsa/shared/w/a/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final kpk:Ll/a/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ll/a/a",
+            "<",
+            "Lcom/google/android/apps/gsa/staticplugins/nowcards/b/ai;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final kpl:Ll/a/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ll/a/a",
+            "<",
+            "Lcom/google/android/apps/gsa/sidekick/shared/g/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ll/a/a;Ll/a/a;Ll/a/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ll/a/a",
+            "<",
+            "Lcom/google/android/apps/gsa/staticplugins/nowcards/b/ai;",
+            ">;",
+            "Ll/a/a",
+            "<",
+            "Lcom/google/android/apps/gsa/sidekick/shared/g/a;",
+            ">;",
+            "Ll/a/a",
+            "<",
+            "Lcom/google/android/apps/gsa/shared/w/a/a;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/w;->kpk:Ll/a/a;
+
+    .line 3
+    iput-object p2, p0, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/w;->kpl:Ll/a/a;
+
+    .line 4
+    iput-object p3, p0, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/w;->kpI:Ll/a/a;
+
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic W(Ljava/lang/Object;)V
+    .locals 2
+
+    .prologue
+    .line 6
+    check-cast p1, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/u;
+
+    .line 7
+    if-nez p1, :cond_0
+
+    .line 8
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    const-string v1, "Cannot inject members into a null reference"
+
+    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 9
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/w;->kpk:Ll/a/a;
+
+    invoke-interface {v0}, Ll/a/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/apps/gsa/staticplugins/nowcards/b/ai;
+
+    iput-object v0, p1, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/u;->kpK:Lcom/google/android/apps/gsa/staticplugins/nowcards/b/ai;
+
+    .line 10
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/w;->kpl:Ll/a/a;
+
+    invoke-interface {v0}, Ll/a/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/apps/gsa/sidekick/shared/g/a;
+
+    iput-object v0, p1, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/u;->hSH:Lcom/google/android/apps/gsa/sidekick/shared/g/a;
+
+    .line 11
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/w;->kpI:Ll/a/a;
+
+    invoke-interface {v0}, Ll/a/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/apps/gsa/shared/w/a/a;
+
+    iput-object v0, p1, Lcom/google/android/apps/gsa/staticplugins/nowcards/i/u;->hSp:Lcom/google/android/apps/gsa/shared/w/a/a;
+
+    .line 12
+    return-void
+.end method

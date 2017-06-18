@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/button_touch_feedback" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/shortcut_height" android:layout_marginTop="@dimen/shortcut_margin_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shortcut_icon" android:layout_width="@dimen/shortcut_icon_side" android:layout_height="@dimen/shortcut_icon_side" android:layout_marginTop="@dimen/shortcut_item_margin_top" android:layout_marginBottom="@dimen/shortcut_item_margin_bottom" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ViewStub android:id="@id/shortcut_badge_stub" android:layout="@layout/badge" android:inflatedId="@id/shortcut_badge" android:layout_width="@dimen/shortcuts_badge_diameter" android:layout_height="@dimen/shortcuts_badge_diameter" android:layout_marginTop="@dimen/shortcuts_badge_margin" android:layout_marginRight="@dimen/shortcuts_badge_margin" android:layout_alignTop="@id/shortcut_icon" android:layout_alignRight="@id/shortcut_icon" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/TextAppearance.ShortcutBarItemLabel" android:ellipsize="end" android:gravity="center" android:id="@id/shortcut_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/shortcut_min_width" android:lines="2" android:layout_below="@id/shortcut_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

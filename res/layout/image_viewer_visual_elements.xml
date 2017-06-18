@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/image_viewer_visual_elements" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/image_viewer_close_button" android:tag="ve=3593;visibility:hidden" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/image_viewer_next_button" android:tag="ve=3590;visibility:hidden" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/image_viewer_prev_button" android:tag="ve=3589;visibility:hidden" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/image_viewer_into_lights_out" android:tag="ve=24951;track:click" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/image_viewer_out_of_lights_out" android:tag="ve=24952;track:click" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/image_viewer_view_original_image" android:tag="ve=3596;track:click" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/image_viewer_amp_link" android:tag="ve=25732;visibility:hidden;track:click" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

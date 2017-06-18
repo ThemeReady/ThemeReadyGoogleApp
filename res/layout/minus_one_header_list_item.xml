@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="start|center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large" android:textSize="@dimen/minus_one_menu_item_text_size" android:id="@id/minus_one_header_item_text" android:background="?android:selectableItemBackground" android:padding="@dimen/minus_one_menu_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/minus_one_menu_item_drawable_padding" />
+</FrameLayout>

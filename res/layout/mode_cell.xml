@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/mode_emoji" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/mode_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/mode_selector_text_color" android:gravity="center_horizontal" android:id="@id/mode_text" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/now_stream_tab" android:background="@drawable/qp_clickable_module_background" android:paddingTop="@dimen/tab_strip_without_text_top_padding" android:paddingBottom="@dimen/tab_strip_without_text_bottom_padding" android:layout_width="@dimen/tab_width" android:layout_height="@dimen/tab_strip_without_text_height" android:elevation="@dimen/tab_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|top" android:id="@id/now_stream_tab_icon" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <View android:layout_gravity="bottom|center" android:id="@id/update_indicator" android:background="@drawable/update_indicator" android:visibility="gone" android:layout_width="@dimen/tab_update_indicator_without_text_size" android:layout_height="@dimen/tab_update_indicator_without_text_size" android:contentDescription="@null" />
+</FrameLayout>

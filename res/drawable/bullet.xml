@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ani_equalizer_black_off" android:minLevel="@integer/bullet_level_paused" android:maxLevel="@integer/bullet_level_paused" />
+    <item android:drawable="@drawable/equalizer_anim" android:minLevel="@integer/bullet_level_playing" android:maxLevel="@integer/bullet_level_playing" />
+</level-list>

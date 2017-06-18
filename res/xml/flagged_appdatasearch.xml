@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppDataSearch xmlns:search="http://schemas.android.com/apk/res-auto">
+    <GlobalSearch search:searchLabel="@string/icing_default_corpus_label" search:settingsDescription="@string/icing_default_corpus_description" search:defaultIntentAction="android.intent.action.MAIN" />
+    <Corpus search:corpusId="suggest_query" search:contentProviderUri="content://com.google.android.googlequicksearchbox.OnDeviceWebSuggestHostProvider/suggest_query">
+        <Section search:sectionId="query" search:sectionFormat="plain" search:noIndex="false" search:sectionWeight="1" search:indexPrefixes="true" />
+        <GlobalSearchCorpus>
+            <GlobalSearchSection search:sectionType="text1" search:sectionContent="@string/icing_section_template_web_suggest_text_1" />
+        </GlobalSearchCorpus>
+    </Corpus>
+</AppDataSearch>

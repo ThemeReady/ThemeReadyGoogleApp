@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/OpaButtonBar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <Button android:id="@id/opa_error_cancel_button" android:tag="ve=37142;track:click" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/chrome_os_opa_value_proposition_cancel" android:textAllCaps="false" style="@style/Opa.Button.ChromeOsGray" />
+    <Space android:layout_width="8.0dip" android:layout_height="fill_parent" />
+    <Button android:id="@id/opa_error_action_button" android:tag="ve=37143;track:click" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/chrome_os_opa_value_proposition_continue" android:textAllCaps="false" android:stateListAnimator="@null" style="@style/Opa.Button.ChromeOsBlue" />
+    <Space android:layout_width="18.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

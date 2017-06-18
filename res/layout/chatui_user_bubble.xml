@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chatui_content" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chatui_horizontal_margin" android:layout_marginTop="@dimen/chatui_user_bubble_gap_top" android:layout_marginRight="@dimen/chatui_horizontal_margin" android:layout_marginBottom="@dimen/chatui_user_bubble_gap_bottom">
+        <LinearLayout android:orientation="vertical" android:id="@id/chatui_metadata" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textColor="@color/opa_text_user" android:id="@id/chatui_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.google.android.apps.gsa.searchplate.widget.StreamingTextView android:id="@id/chatui_streaming_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/chatui_metadata" android:layout_alignParentRight="true" style="@style/ChatUi.Bubble.User" />
+    </RelativeLayout>
+</FrameLayout>

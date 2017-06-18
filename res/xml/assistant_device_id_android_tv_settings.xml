@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.gsa.assistant.settings.shared.PreferenceHolder android:key="@string/assistant_device_id_group_holder">
+        <com.google.android.apps.gsa.assistant.settings.shared.CustomPreferenceCategory android:title="@string/assistant_settings_device_id_category" android:key="@string/assistant_device_id_android_tv_preference_category">
+            <com.google.android.apps.gsa.assistant.settings.shared.MainScreenDropDownPreference android:persistent="false" android:key="androidTvDeviceId" />
+            <com.google.android.apps.gsa.assistant.settings.shared.AddressPreference android:persistent="false" android:key="androidTvLocation" />
+            <SwitchPreferenceCompat android:persistent="false" android:title="@string/common_device_personal_info_permission_title" android:key="androidTvPersonalInfoPermission" android:summary="@string/common_device_id_personal_info_permission_summary" android:defaultValue="true" />
+        </com.google.android.apps.gsa.assistant.settings.shared.CustomPreferenceCategory>
+    </com.google.android.apps.gsa.assistant.settings.shared.PreferenceHolder>
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+.class public interface abstract Lcom/google/android/apps/gsa/plugins/recents/view/group/u;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract HH()V
+.end method
+
+.method public abstract c(Lcom/google/android/apps/gsa/plugins/recents/view/group/RecentlyView;)Z
+.end method

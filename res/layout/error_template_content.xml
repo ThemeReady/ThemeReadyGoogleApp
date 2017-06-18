@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="?suwGlifHeaderGravity" android:id="@id/opa_error_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Opa.Text.Title">
+        <requestFocus />
+    </TextView>
+    <TextView android:gravity="?suwGlifHeaderGravity" android:id="@id/opa_error_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/opa_error_content_separator" style="@style/Opa.Text.Message" />
+    <TextView android:gravity="?suwGlifHeaderGravity" android:id="@id/opa_error_message_second_paragraph" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/opa_error_content_separator" style="@style/Opa.Text.Message" />
+    <TextView android:gravity="?suwGlifHeaderGravity" android:id="@id/opa_error_annotation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/opa_error_content_separator" style="@style/Opa.Text.SecondaryMessage" />
+    <ImageView android:id="@id/opa_error_illustration" android:layout_width="fill_parent" android:layout_height="@dimen/opa_error_illustration_height" android:layout_marginTop="@dimen/opa_error_content_separator" />
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/opa_error_switch_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/opa_error_switch_content_separator">
+        <ImageView android:id="@id/opa_error_switch_icon" android:layout_width="@dimen/opa_error_switch_icon_size" android:layout_height="@dimen/opa_error_switch_icon_size" android:layout_marginEnd="@dimen/opa_error_switch_icon_margin_right" />
+        <TextView android:id="@id/opa_error_switch_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Opa.Text.Message" />
+        <Switch android:id="@id/opa_error_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/opa_error_switch_icon_margin_top" android:layout_marginStart="@dimen/opa_error_switch_icon_margin_right" />
+    </LinearLayout>
+    <TextView android:gravity="?suwGlifHeaderGravity" android:id="@id/opa_error_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/opa_error_content_separator" style="@style/Opa.Text.Message" />
+</merge>

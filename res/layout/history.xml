@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/monet_ignore_layout" android:layout_height="@dimen/monet_ignore_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/order_history_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:elevation="@dimen/toolbar_elevation" appcompat:title="@string/order_history_title" appcompat:titleMarginStart="@dimen/toolbar_title_margin_start" appcompat:navigationIcon="@drawable/quantum_ic_arrow_back_grey600_24" appcompat:titleTextColor="@color/quantum_grey900" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+        <LinearLayout android:orientation="vertical" android:id="@id/order_list_container" android:paddingTop="@dimen/container_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/order_details_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/order_history_spinner_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

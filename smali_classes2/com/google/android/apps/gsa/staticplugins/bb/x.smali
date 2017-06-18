@@ -1,0 +1,48 @@
+.class Lcom/google/android/apps/gsa/staticplugins/bb/x;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/common/base/Supplier;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/common/base/Supplier",
+        "<",
+        "Ljava/text/DateFormat;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public synthetic get()Ljava/lang/Object;
+    .locals 2
+
+    .prologue
+    .line 2
+    .line 3
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    const-string v1, "\'cronet-\'y-MM-dd_HH_mm_ss\'.netlog.tmp\'"
+
+    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    return-object v0
+.end method

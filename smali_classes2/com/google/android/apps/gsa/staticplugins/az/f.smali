@@ -1,0 +1,202 @@
+.class Lcom/google/android/apps/gsa/staticplugins/az/f;
+.super Lcom/google/android/apps/gsa/shared/util/concurrent/NamedUiRunnable;
+.source "SourceFile"
+
+
+# instance fields
+.field public final synthetic kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/apps/gsa/staticplugins/az/e;Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    invoke-direct {p0, p2}, Lcom/google/android/apps/gsa/shared/util/concurrent/NamedUiRunnable;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    .prologue
+    .line 2
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    sget v1, Landroid/support/v4/content/ModernAsyncTask$Status;->Cc:I
+
+    .line 3
+    iput v1, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->kei:I
+
+    .line 5
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 6
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->crs:Lcom/google/android/apps/gsa/shared/io/NetworkMonitor;
+
+    .line 7
+    invoke-interface {v0}, Lcom/google/android/apps/gsa/shared/io/NetworkMonitor;->stop()V
+
+    .line 8
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 9
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->bzn:Lcom/google/android/apps/gsa/shared/util/concurrent/TaskRunnerUi;
+
+    .line 10
+    iget-object v1, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 11
+    iget-object v1, v1, Lcom/google/android/apps/gsa/staticplugins/az/e;->ked:Lcom/google/android/apps/gsa/shared/util/concurrent/UiRunnable;
+
+    .line 12
+    invoke-interface {v0, v1}, Lcom/google/android/apps/gsa/shared/util/concurrent/TaskRunnerUi;->cancelUiTask(Lcom/google/android/apps/gsa/shared/util/concurrent/UiRunnable;)V
+
+    .line 13
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 14
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->kdY:Lcom/google/android/apps/gsa/search/core/state/a/c;
+
+    .line 15
+    invoke-static {v0}, Lcom/google/common/base/ay;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 16
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 17
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->kdY:Lcom/google/android/apps/gsa/search/core/state/a/c;
+
+    .line 18
+    sget-object v1, Lcom/google/android/apps/gsa/shared/io/ConnectivityInfo;->UNKNOWN:Lcom/google/android/apps/gsa/shared/io/ConnectivityInfo;
+
+    invoke-interface {v0, v1}, Lcom/google/android/apps/gsa/search/core/state/a/c;->a(Lcom/google/android/apps/gsa/shared/io/ConnectivityInfo;)V
+
+    .line 19
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 20
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->blO:Lcom/google/android/apps/gsa/search/core/config/GsaConfigFlags;
+
+    .line 21
+    const/16 v1, 0x662
+
+    invoke-virtual {v0, v1}, Lcom/google/android/apps/gsa/search/core/config/GsaConfigFlags;->getBoolean(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 23
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->blO:Lcom/google/android/apps/gsa/search/core/config/GsaConfigFlags;
+
+    .line 24
+    const/16 v1, 0x62e
+
+    invoke-virtual {v0, v1}, Lcom/google/android/apps/gsa/search/core/config/GsaConfigFlags;->getBoolean(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 25
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 26
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->bsZ:Lcom/google/android/apps/gsa/search/core/google/bk;
+
+    .line 27
+    iget-object v1, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 28
+    iget-object v1, v1, Lcom/google/android/apps/gsa/staticplugins/az/e;->keg:Lcom/google/android/apps/gsa/search/core/google/bl;
+
+    .line 29
+    invoke-interface {v0, v1}, Lcom/google/android/apps/gsa/search/core/google/bk;->b(Lcom/google/android/apps/gsa/search/core/google/bl;)V
+
+    .line 30
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 31
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->kej:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+
+    .line 32
+    if-eqz v0, :cond_1
+
+    .line 33
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 34
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->cdf:Lc/a;
+
+    .line 35
+    invoke-interface {v0}, Lc/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/SharedPreferences;
+
+    iget-object v1, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 37
+    iget-object v1, v1, Lcom/google/android/apps/gsa/staticplugins/az/e;->kej:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+
+    .line 38
+    invoke-interface {v0, v1}, Landroid/content/SharedPreferences;->unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+
+    .line 39
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    const/4 v1, 0x0
+
+    .line 40
+    iput-object v1, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->kej:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+
+    .line 42
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 43
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->kea:Landroid/telephony/PhoneStateListener;
+
+    .line 44
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 45
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->kaC:Landroid/telephony/TelephonyManager;
+
+    .line 46
+    if-eqz v0, :cond_2
+
+    .line 47
+    iget-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 48
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/az/e;->kaC:Landroid/telephony/TelephonyManager;
+
+    .line 49
+    iget-object v1, p0, Lcom/google/android/apps/gsa/staticplugins/az/f;->kek:Lcom/google/android/apps/gsa/staticplugins/az/e;
+
+    .line 50
+    iget-object v1, v1, Lcom/google/android/apps/gsa/staticplugins/az/e;->kea:Landroid/telephony/PhoneStateListener;
+
+    .line 51
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
+
+    .line 52
+    :cond_2
+    return-void
+.end method

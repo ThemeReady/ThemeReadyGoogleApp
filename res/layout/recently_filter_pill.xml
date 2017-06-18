@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/recently_filter_pill" android:layout_width="wrap_content" android:layout_height="@dimen/recently_filter_pill_height" android:layout_marginLeft="@dimen/recently_filter_pill_outer_edge_margin" android:layout_marginRight="@dimen/recently_filter_pill_outer_edge_margin" android:elevation="@dimen/recently_filter_pill_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/recently_filterbox_text_size" android:ellipsize="middle" android:id="@id/filter_pill_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/recently_filter_pill_inner_edge_margin" android:layout_marginRight="@dimen/recently_filter_pill_inner_edge_margin" android:maxWidth="100.0dip" android:maxLines="1" />
+    <ImageView android:id="@id/filter_pill_remove" android:padding="@dimen/recently_filter_pill_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/recently_filter_pill_inner_edge_margin" android:src="@drawable/quantum_ic_close_white_18" />
+</LinearLayout>

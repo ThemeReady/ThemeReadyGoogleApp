@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.gsa.assistant.settings.shared.DescriptionPreferenceCategory android:key="@string/assistant_settings_brief_description_header_key" app:allowDividerBelow="false" />
+    <PreferenceCategory android:key="@string/assistant_settings_brief_items_category_key" />
+    <PreferenceCategory android:key="@string/assistant_settings_brief_wrap_up_category_key" />
+    <com.google.android.apps.gsa.assistant.settings.brief.DisclaimerPreference android:title="@string/assistant_settings_brief_finance_disclaimers" android:key="@string/assistant_settings_brief_finance_disclaimers_key">
+        <intent android:action="android.intent.action.VIEW" android:data="https://www.google.com/googlefinance/disclaimer/" />
+    </com.google.android.apps.gsa.assistant.settings.brief.DisclaimerPreference>
+</PreferenceScreen>

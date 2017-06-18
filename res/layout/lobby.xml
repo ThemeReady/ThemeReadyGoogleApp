@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/monet_ignore_layout" android:layout_height="@dimen/monet_ignore_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/active_page_flipper" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/updates" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/recently" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ViewFlipper>
+    <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/tab_navigation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</LinearLayout>

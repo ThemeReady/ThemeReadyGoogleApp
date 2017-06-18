@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/setting_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setup_wizard_content_paragraph_margin_top" style="@style/setup_wizard_section_title" />
+    <TextView android:textColor="?android:textColorSecondary" android:id="@id/setting_description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setup_wizard_description" />
+</LinearLayout>

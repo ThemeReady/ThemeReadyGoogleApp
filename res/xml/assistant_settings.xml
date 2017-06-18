@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:icon="@drawable/quantum_ic_person_grey600_24" android:persistent="false" android:key="@string/assistant_account_preference" android:widgetLayout="@layout/preference_widget_account" android:fragment="com.google.android.apps.gsa.assistant.settings.aboutme.PersonalInfoSettingsFragment" />
+    <com.google.android.apps.gsa.assistant.settings.shared.PreferenceHolder android:key="@string/assistant_top_group_holder" />
+    <com.google.android.apps.gsa.assistant.settings.shared.MainScreenPreferenceCategory android:title="@string/assistant_settings_devices_category" android:key="@string/assistant_device_type_preference_category">
+        <com.google.android.apps.gsa.assistant.settings.shared.MainScreenDropDownPreference android:persistent="false" android:key="@string/assistant_device_type_preference" />
+    </com.google.android.apps.gsa.assistant.settings.shared.MainScreenPreferenceCategory>
+    <com.google.android.apps.gsa.assistant.settings.shared.NoTopDividerPreferenceHolder android:key="@string/assistant_device_type_group_holder" />
+    <com.google.android.apps.gsa.assistant.settings.shared.PreferenceHolder android:key="@string/assistant_device_id_group_holder" />
+    <com.google.android.apps.gsa.assistant.settings.shared.PreferenceHolder android:key="@string/assistant_bottom_group_holder">
+        <com.google.android.apps.gsa.assistant.settings.shared.MainScreenPreferenceCategory android:title="@string/assistant_settings_google_account_category" android:key="@string/assistant_global_preference_category">
+            <PreferenceScreen android:persistent="false" android:title="@string/assistant_settings_about_me_title" android:key="@string/assistant_about_me_preference" android:summary="@string/assistant_settings_about_me_summary" android:fragment="com.google.android.apps.gsa.assistant.settings.aboutme.PersonalInfoSettingsFragment" />
+            <PreferenceScreen android:persistent="false" android:title="@string/assistant_settings_payments_title" android:key="@string/assistant_payments_preference" android:summary="@string/assistant_settings_payments_summary" android:fragment="com.google.android.apps.gsa.assistant.settings.payments.PaymentsSettingsFragment" />
+            <Preference android:persistent="false" android:title="@string/assistant_settings_history_title" android:key="@string/assistant_history_preference" android:summary="@string/assistant_settings_history_summary" /> />
+</com.google.android.apps.gsa.assistant.settings.shared.MainScreenPreferenceCategory>
+    </com.google.android.apps.gsa.assistant.settings.shared.PreferenceHolder>
+</PreferenceScreen>

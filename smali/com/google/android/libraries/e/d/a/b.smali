@@ -1,0 +1,32 @@
+.class Lcom/google/android/libraries/e/d/a/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/libraries/e/d/c;
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public i(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/libraries/e/d/b;
+    .locals 1
+
+    .prologue
+    .line 2
+    new-instance v0, Lcom/google/android/libraries/e/d/a/i;
+
+    invoke-direct {v0, p1, p2, p3}, Lcom/google/android/libraries/e/d/a/i;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object v0
+.end method

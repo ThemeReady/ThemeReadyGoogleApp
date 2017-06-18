@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="top" android:orientation="vertical" android:id="@id/liteswitch_top_bar" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/lite_switch_top_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="@color/liteswitch_top_bar_text" android:gravity="center" android:id="@id/liteswitch_top_bar_text" android:background="@color/liteswitch_top_bar_lite" android:layout_width="fill_parent" android:layout_height="@dimen/lite_switch_top_bar_text_height" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+    <View android:id="@id/liteswitch_top_bar_border" android:background="@color/liteswitch_top_bar_border_line_lite" android:layout_width="fill_parent" android:layout_height="@dimen/lite_switch_top_bar_border_height" />
+</LinearLayout>

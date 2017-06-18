@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.gsa.staticplugins.opa.errorui.ErrorLayout android:tag="ve=36591" android:layout_width="fill_parent" android:layout_height="fill_parent" errorlayout:title="@string/opa_gmscore_unavailable_title" errorlayout:message="@string/opa_gmscore_unavailable_message_unknown" errorlayout:footerType="actionButton" errorlayout:actionText="@string/opa_gmscore_unavailable_button_no_recovery"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:errorlayout="http://schemas.android.com/apk/res-auto" />

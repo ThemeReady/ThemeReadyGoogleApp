@@ -1,0 +1,275 @@
+<html lang="en"><head><script>window.__webdriver_javascript_errors = [];window.onerror = function(errorMessage,url,lineNumber){window.__webdriver_javascript_errors.push(errorMessage + ' (found at ' + url + ', line ' + lineNumber + ')');};</script>  <script data-id="polyfill">Function.prototype.bind||(Function.prototype.bind=function(a){function b(){return e.apply(this instanceof c?this:a,d.concat(Array.prototype.slice.call(arguments)))}
+function c(){}
+if("function"!==typeof this)throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");var d=Array.prototype.slice.call(arguments,1),e=this;c.prototype=this.prototype;b.prototype=new c;return b});</script>    <script data-id="common">function k(){return function(){}}
+function aa(a){return function(b){this[a]=b}}
+function m(a){return function(){return this[a]}}
+function ba(a){return function(){return a}}
+var q,t=this;function ca(a,b){for(var c=a.split("."),d=b||t,e;e=c.shift();)if(null!=d[e])d=d[e];else return null;return d}
+function u(){}
+function da(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b}
+function v(a){return"string"==typeof a}
+function ea(a){return"function"==da(a)}
+function fa(a,b,c){return a.call.apply(a.bind,arguments)}
+function ga(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}}
+function w(a,b,c){w=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?fa:ga;return w.apply(null,arguments)}
+function ha(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var b=c.slice();b.push.apply(b,arguments);return a.apply(this,b)}}
+var x=Date.now||function(){return+new Date};function y(a,b){function c(){}
+c.prototype=b.prototype;a.Qa=b.prototype;a.prototype=new c;a.prototype.constructor=a;a.Pe=function(a,c,f){for(var g=Array(arguments.length-2),h=2;h<arguments.length;h++)g[h-2]=arguments[h];return b.prototype[c].apply(a,g)}}
+;function z(a,b,c){var d=a.className?a.className.split(" "):[],e=-1!=d.indexOf(b),f="undefined"==typeof c;!c&&!f||e?(!1===c||f)&&e&&(d=d.filter(function(a){return a!=b})):d.push(b);a.className=d.join(" ")}
+function A(a,b){return-1!=a.className.split(" ").indexOf(b)}
+function B(a,b){var c=(new RegExp("[?&]"+ia(encodeURIComponent(a))+"=([^&]*)")).exec(b||C().query);return c?decodeURIComponent(c[1]):""}
+function ja(a,b,c){a=encodeURIComponent(a);b=encodeURIComponent(b);var d=new RegExp("([?&]"+ia(a)+"=)([^&]*)");return d.test(c)?c.replace(d,"$1"+b.replace("$","$$")):c?c+"&"+a+"="+b:"?"+a+"="+b}
+function ka(a){return(a=(new RegExp("[#&]"+ia(encodeURIComponent(a))+"=([^&]*)")).exec(window.location.hash))?decodeURIComponent(a[1]):""}
+function la(a,b){var c=encodeURIComponent(a),d=encodeURIComponent(b),e=new RegExp("([#&]"+ia(c)+"=)([^&]*)"),c=e.test(window.location.hash)?window.location.hash.replace(e,"$1"+d.replace("$","$$")):window.location.hash&&"#"!=window.location.hash?window.location.hash+"&"+c+"="+d:"#"+c+"="+d;window.history.replaceState?window.history.replaceState(null,"",c):window.location.replace(c)}
+function ma(a){a=ia(encodeURIComponent(a));a=new RegExp("(?:(#)|&)"+a+"=[^&]*$|([#&])"+a+"=[^&]*.");a.test(window.location.hash)&&(a=window.location.hash.replace(a,"$1$2"),window.history.replaceState?window.history.replaceState(null,"",a):window.location.replace(a))}
+function ia(a){return a.replace(/[-\/\\^$*+?.()|[\]{}]/g,"\\$&")}
+function na(a){var b=0>a.indexOf("?")?"?":"&",c=C().mendel_ids;c&&c.length&&(a+=b+"mendel_ids="+c.join(),b="&");c=C();c.au&&(a+=b+"authuser="+c.au);return a}
+function D(a){var b=C(),b=b.ehn+"/"+(a.yd||b.ehc)+"/apis/"+a.endpoint;if(a.W){var c="",d;for(d in a.W)c+=(c?"&":"?")+encodeURIComponent(d)+"="+encodeURIComponent(a.W[d]);b+=c}b=na(b);oa(b,a)}
+function oa(a,b){var c=b||{},d=new XMLHttpRequest;d.open(c.M||"GET",a);d.withCredentials=!0;c.rb&&d.setRequestHeader("X-SupportContent-XsrfToken",C().xsrf);c.aa&&d.addEventListener("load",function(){c.aa(d)});c.gb&&d.addEventListener("error",function(){c.gb(d)});c.Y?d.send(JSON.stringify(c.Y)):d.send()}
+function qa(){var a=C(),b=a.bcUrl;a.query&&(b+=a.query);return b+window.location.hash}
+function E(a,b,c){var d=document.createEvent("Event");d.initEvent(b,!0,!0);c&&(d.detail=c);a.dispatchEvent(d)}
+function ra(a,b,c){var d=window.localStorage;if(!d)return!1;try{var e=c?JSON.stringify(b):b;d.setItem(a,e);return!0}catch(f){return window.sc_trackStatsEvent(sa,ta,"local storage - persist local data"),!1}}
+function ua(a,b,c){var d=window.localStorage;if(!d)return null;try{var e=d.getItem(a);if(!e)return null;c&&(e=JSON.parse(e));if(b){var f=window.localStorage;f&&f.removeItem(a)}return e}catch(g){return window.sc_trackStatsEvent(sa,ta,"local storage - get local data"),null}}
+var va=[],wa=null;function F(a){a=xa(a);for(var b=0;b<va.length;b++)va[b](a);wa&&wa(a)||(window.location=a.href)}
+function xa(a){var b=document.createElement("a");b.href=a;return b}
+function ya(a){E(document,a?"sc_modalShow":"sc_modalHide")}
+function za(){var a=C();return{template_set:1,uri:qa(),initial_request_origin:a.iro,request_source:a.rs,page_type:a.pt,device_type:a.dt,network_connection_class:a.ncc}}
+function C(){return window.sc_pageModel}
+var Aa={id:0,n:"unknown"},Ba={id:2,n:"zippy"},Ca={id:6,n:"hc survey"},Da={id:8,n:"carousel"},Ea={id:10,n:"search"},Fa={id:13,n:"proactive chat"},Ga={id:14,n:"contact flow"},Ha={id:17,n:"contact flow deep link"},Ia={id:20,n:"article survey"},Ka={id:21,n:"contact form"},La={id:22,n:"recaptcha"},Ma={id:23,n:"portal"},Na={id:25,n:"troubleshooter"},Oa={id:39,n:"screenshot"},Pa={id:40,n:"glossary"},sa={id:41,n:"page"},Qa={id:42,n:"appbar"},Ra={id:43,n:"dynamic_recommendation"},Sa={id:44,n:"video"},Ta={id:48,n:"chat"},Ua={id:49,n:"feedback"},Va={a:Aa,wa:{id:1,n:"homepage"},Af:Ba,rf:{id:3,n:"sibling nav"},wf:{id:4,n:"top nav"},Oe:{id:5,n:"promotion"},va:Ca,nb:{id:7,n:"notification"},l:Da,i:{id:9,n:"breadcrumbs"},af:Ea,hf:{id:11,n:"search results"},kf:{id:12,n:"search results nav"},Le:Fa,u:Ga,A:{id:15,n:"contact flow issues"},B:{id:16,n:"contact flow login"},w:Ha,ia:{id:18,n:"footer"},K:{id:19,n:"context selector"},g:Ia,H:Ka,Qe:La,qb:Ma,vf:{id:24,n:"topic"},zf:Na,uf:{id:26,n:"suggestions"},Ca:{id:27,n:"known issues"},o:{id:28,n:"checklist"},R:{id:29,n:"faq"},T:{id:30,n:"faq toc"},S:{id:31,n:"faq questions"},c:{id:32,n:"appbar"},s:{id:33,n:"community button"},pb:{id:34,n:"policy"},b:{id:35,n:"answer"},Me:{id:36,n:"product button"},Ue:{id:37,n:"related items"},yf:{id:38,n:"translate"},Xe:Oa,ja:Pa,ob:sa,f:Qa,P:Ra,VIDEO:Sa,Ne:{id:45,n:"product selector"},la:{id:46,n:"guide"},G:{id:47,n:"contact flow recommendation"},m:Ta,X:Ua},Wa={id:0,n:"unknown"},Xa={id:1,n:"view"},Ya={id:2,n:"expand"},Za={id:3,n:"collapse"},G=
+{id:4,n:"show"},$a={id:5,n:"hide"},ab={id:6,n:"next"},bb={id:7,n:"previous"},cb={id:8,n:"select"},db={id:9,n:"dismiss"},eb={id:10,n:"accept"},fb={id:11,n:"rejected"},gb={id:12,n:"suggested"},hb={id:14,n:"answered"},ib={id:17,n:"invalidated"},jb={id:18,n:"start"},kb={id:19,n:"end"},lb={id:20,n:"initialized"},ta={id:21,n:"error"},mb={id:22,n:"submit"},nb={id:23,n:"auto complete"},ob={id:24,n:"edit"},pb={id:25,n:"play"},qb={id:26,n:"pause"},rb={id:27,n:"buffer"},sb={id:28,n:"cue"},tb={a:Wa,wa:Xa,A:Ya,l:Za,X:G,B:$a,NEXT:ab,R:bb,T:cb,s:db,b:eb,S:fb,la:gb,i:{id:13,n:"categorized"},c:hb,m:{id:15,n:"completed"},va:{id:16,n:"validated"},H:ib,ia:jb,w:kb,G:lb,ERROR:ta,ja:mb,f:nb,u:ob,P:pb,K:qb,g:rb,o:sb};function ub(a){a=String(a);if(/^\s*$/.test(a)?0:/^[\],:{}\s\u2028\u2029]*$/.test(a.replace(/\\["\\\/bfnrtu]/g,"@").replace(/(?:"[^"\\\n\r\u2028\u2029\x00-\x08\x0a-\x1f]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)[\s\u2028\u2029]*(?=:|,|]|}|$)/g,"]").replace(/(?:^|:|,)(?:[\s\u2028\u2029]*\[)+/g,"")))try{return eval("("+a+")")}catch(b){}throw Error("Invalid JSON string: "+a);}
+;var vb="constructor hasOwnProperty isPrototypeOf propertyIsEnumerable toLocaleString toString valueOf".split(" ");function wb(a,b){for(var c,d,e=1;e<arguments.length;e++){d=arguments[e];for(c in d)a[c]=d[c];for(var f=0;f<vb.length;f++)c=vb[f],Object.prototype.hasOwnProperty.call(d,c)&&(a[c]=d[c])}}
+;var xb=String.prototype.trim?function(a){return a.trim()}:function(a){return a.replace(/^[\s\xa0]+|[\s\xa0]+$/g,"")};function yb(){return-1!=zb.toLowerCase().indexOf("webkit")}
+function Ab(a,b){for(var c=0,d=xb(String(a)).split("."),e=xb(String(b)).split("."),f=Math.max(d.length,e.length),g=0;0==c&&g<f;g++){var h=d[g]||"",l=e[g]||"",n=RegExp("(\\d*)(\\D*)","g"),p=RegExp("(\\d*)(\\D*)","g");do{var r=n.exec(h)||["","",""],K=p.exec(l)||["","",""];if(0==r[0].length&&0==K[0].length)break;c=Bb(0==r[1].length?0:parseInt(r[1],10),0==K[1].length?0:parseInt(K[1],10))||Bb(0==r[2].length,0==K[2].length)||Bb(r[2],K[2])}while(0==c)}return c}
+function Bb(a,b){return a<b?-1:a>b?1:0}
+;var zb;a:{var Cb=t.navigator;if(Cb){var Db=Cb.userAgent;if(Db){zb=Db;break a}}zb=""}function H(a){return-1!=zb.indexOf(a)}
+;var Eb=Array.prototype.indexOf?function(a,b,c){return Array.prototype.indexOf.call(a,b,c)}:function(a,b,c){c=null==c?0:0>c?Math.max(0,a.length+c):c;if(v(a))return v(b)&&1==b.length?a.indexOf(b,c):-1;for(;c<a.length;c++)if(c in a&&a[c]===b)return c;return-1},Fb=Array.prototype.forEach?function(a,b,c){Array.prototype.forEach.call(a,b,c)}:function(a,b,c){for(var d=a.length,e=v(a)?a.split(""):a,f=0;f<d;f++)f in e&&b.call(c,e[f],f,a)},Gb=Array.prototype.filter?function(a,b,c){return Array.prototype.filter.call(a,b,c)}:function(a,b,c){for(var d=a.length,e=[],f=0,g=v(a)?a.split(""):a,h=0;h<d;h++)if(h in g){var l=g[h];b.call(c,l,h,a)&&(e[f++]=l)}return e},Hb=Array.prototype.map?function(a,b,c){return Array.prototype.map.call(a,b,c)}:function(a,b,c){for(var d=a.length,e=Array(d),f=v(a)?a.split(""):a,g=0;g<d;g++)g in f&&(e[g]=b.call(c,f[g],g,a));return e},Ib=Array.prototype.some?function(a,b,c){return Array.prototype.some.call(a,b,c)}:function(a,b,c){for(var d=a.length,e=v(a)?a.split(""):a,f=0;f<d;f++)if(f in e&&b.call(c,e[f],f,a))return!0;return!1};function Jb(){return H("Trident")||H("MSIE")}
+;function Kb(){return H("Gecko")&&!(yb()&&!H("Edge"))&&!(H("Trident")||H("MSIE"))&&!H("Edge")}
+;var Lb=H("Opera"),I=Jb(),Mb=H("Edge"),Nb=Kb(),Ob=yb()&&!H("Edge");function Pb(){var a=t.document;return a?a.documentMode:void 0}
+var Qb;a:{var Rb="",Sb=function(){var a=zb;if(Nb)return/rv\:([^\);]+)(\)|;)/.exec(a);if(Mb)return/Edge\/([\d\.]+)/.exec(a);if(I)return/\b(?:MSIE|rv)[:]([^\);]+)(\)|;)/.exec(a);if(Ob)return/WebKit\/(\S+)/.exec(a);if(Lb)return/(?:Version)[ \/]?(\S+)/.exec(a)}();Sb&&(Rb=Sb?Sb[1]:"");if(I){var Tb=Pb();if(null!=Tb&&Tb>parseFloat(Rb)){Qb=String(Tb);break a}}Qb=Rb}var Ub=Qb,Vb={};function J(a){return Vb[a]||(Vb[a]=0<=Ab(Ub,a))}
+var Wb=t.document,Xb=Wb&&I?Pb()||("CSS1Compat"==Wb.compatMode?parseInt(Ub,10):5):void 0;!Nb&&!I||I&&9<=Number(Xb)||Nb&&J("1.9.1");I&&J("9");</script>   <script>
+    window['start'] = new Date().getTime();
+    if (window.performance && window.performance.now){window['wsrt'] = Math.floor(window.performance.now());}
+  </script> <style data-id="all">html{-webkit-text-size-adjust:100%}html.hcfe{background-color:#f5f5f5;overflow-y:scroll}body.mobile{margin:0;position:relative}div{outline:none}.hcfe{background-color:#fff;color:#212121;font-family:Roboto, "Helvetica Neue", Helvetica, sans-serif;font-size:14px;line-height:20px}.hcfe p{margin:5px 0}.hcfe a{color:#4285f4;text-decoration:none}.hcfe a img{border:0}.hcfe article section section{padding:0}.hcfe ol,.hcfe ul{margin:0;outline:0;padding:0;vertical-align:baseline}.hcfe h1,.hcfe h2,.hcfe h3,.hcfe h4,.hcfe h5{color:#212121;font-weight:400}.hcfe h1{font-size:24px;line-height:32px;margin:0 0 8px}.hcfe h2{font-size:20px;font-weight:500;line-height:32px;margin:0 0 4x}.hcfe h3{font-size:20px;line-height:32px;margin:24px 0 8px}.hcfe h4{font-size:16px;font-weight:500;line-height:24px;margin:8px 0}.hcfe h5{font-size:14px;font-weight:700;line-height:24px;margin:4px 0}.hcfe h6{font-size:inherit;font-weight:inherit;margin:0}.hcfe button,.hcfe input,.hcfe select,.hcfe textarea{color:#212121;font-family:Roboto, "Helvetica Neue", Helvetica, sans-serif;font-size:14px;line-height:20px}.hcfe select{background:none;border:solid #d9d9d9;border-width:0 0 1px 0;font-size:13px;font-weight:bold;max-width:100%;outline:0;padding:5px}.hcfe img{vertical-align:middle}.cc{word-wrap:break-word}.cc h1{margin:24px 0 8px}.cc>h3>a,.cc>h4>a{color:#212121}.cc div,.cc p,.cc ol,.cc ul{margin:4px 0 12px}.cc ul li{margin:4px 0 4px 26px}.cc ol li{margin:4px 0 4px 20px}.cc ol ol{list-style-type:lower-latin}.cc ul ul,.cc ol ul{list-style-type:disc}.cc code{color:#060}.cc pre{direction:ltr;margin:0;text-align:left;white-space:pre-wrap;word-wrap:break-word}.cc a:visited{color:#7759ae}.cc a[target="_blank"]:after,.notification a[target="_blank"]:after{content:'';background:no-repeat url(https://ssl.gstatic.com/support/content/images/sprites/core-mobile-52bf8ba6d40a366fb44d1a5ebcd44e8c.png) 0 0;display:inline-block;height:10px;margin:0 3px 0 5px;width:10px}.rtl .cc a[target="_blank"]:after,.rtl .notification a[target="_blank"]:after{transform:scaleX(-1)}.cc iframe{max-width:100%}.cc ul>li>ul{margin:0}.cc ul:not(.no-bullets):not(.no_bullets)>li{list-style-type:none;margin-left:0;padding-left:16px}.cc ul:not(.no-bullets):not(.no_bullets)>li:before{content:"\002022";float:left;font-size:16px;margin-left:-14px}.cc blockquote{margin:0 0 0 30px}.cc hr{border:none;border-top:1px dashed #e5e5e5}.hcfe img.float-left{float:left;margin-right:1em;max-width:50%}.hcfe img.float-right{float:right;margin-left:1em;max-width:50%}.hcfe img.screenshot{height:auto !important;width:100%}.hcfe img{max-width:100%}.cc table{border-collapse:collapse;border-spacing:0;margin:0;padding:0;border:0;outline:0}.cc .table-basic,.cc .table-stacked{margin-top:16px}.cc .table-basic caption,.cc .table-stacked caption{color:#212121;font-size:20px;font-weight:400;line-height:24px;padding-bottom:16px;text-align:left}@media all and (max-width:770px){.cc .table-basic caption,.cc .table-stacked caption{color:#757575}}.cc td{vertical-align:top}.cc td,.cc th{padding:13px 5px;position:relative}.cc th{color:#757575;font-weight:bold;text-align:left;vertical-align:baseline}.cc table .align-middle{vertical-align:middle}.cc .zippy-wrapper{margin:0 0 1px;padding:0}.cc .zippy-wrapper>.zippy-container .zippy{padding-bottom:11px}.cc .zippy-container{margin:0}.cc>.zippy-container,.cc>div>.zippy-container{margin:0 -16px}.cc>.zippy-container+.zippy-overflow .zippy-content{margin-left:18px}.cc .zippy{box-sizing:border-box;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;color:#4285f4;display:inline-block;font-size:14px;font-weight:normal;line-height:20px;margin:-1px;outline:none;padding:16px 50px 16px 16px;position:relative;width:100%}.cc .zippy:before{background:no-repeat url(https://ssl.gstatic.com/support/content/images/sprites/core-mobile-52bf8ba6d40a366fb44d1a5ebcd44e8c.png) 0 -36px;background-size:24px;content:'';height:22px;margin-top:-12px;position:absolute;right:18px;top:50%;width:22px}.cc .zippy.goog-zippy-expanded{border-bottom:none;padding-bottom:9px}.cc .zippy.goog-zippy-expanded:before{margin-top:-7px;transform:scaleY(-1);-webkit-transform:scaleY(-1);-moz-transform:scaleY(-1);-ms-transform:scaleY(-1);-o-transform:scaleY(-1)}.cc .zippy-last .goog-zippy-collapsed{padding-bottom:12px}.cc .zippy-last .goog-zippy-collapsed:before{margin-top:-10px}.cc .zippy-last+.zippy-overflow>.zippy-content{padding-bottom:20px}.cc .zippy-last+.zippy-overflow>.zippy-content:before{top:-20px}.cc li .zippy,.cc li .zippy:visited{background-color:transparent}.cc .zippy div,.cc .zippy h1,.cc .zippy h2,.cc .zippy h3,.cc .zippy h4,.cc .zippy h5,.cc .zippy p{color:#4285f4;font:normal 14px/20px 'Roboto','Helvetica Neue',Helvetica,sans-serif;margin:0}.cc .zippy-content{margin:0 0 0 18px;overflow:hidden;padding:1px 26px 19px 16px;position:relative}.cc .zippy-content:before{background-color:#e0e0e0;content:'';height:100%;left:0;position:absolute;top:-19px;width:2px}.cc .zippy-content.zippy-hidden{display:block}.cc .zippy-content>h3{font-size:20px}.cc .zippy-overflow{margin:0;overflow:hidden}.cc>.zippy-overflow{margin:0 -16px}.cc .zippy-overflow+.zippy-container{margin-top:1px}.cc .zippy-content>h3:first-of-type{margin-top:0}.cc .zippy-content .zippy{border:0;padding-left:0;padding-right:40px}.cc .zippy-content .zippy:before{right:8px}.cc .zippy-content .zippy-container+.zippy-overflow .zippy-content{margin:0 0 -1px 0;padding-bottom:0;padding-right:6px}.cc .zippy-content .zippy-container+.zippy-overflow .zippy-content:before{top:-12px}.cc>.zippy-overflow .zippy{padding-right:30px}.page{box-shadow:0 2px 5px 0 rgba(0,0,0,.26);display:inline-block;position:relative;width:100%}.csi{display:none}</style></head><body>    <div class="hcfe render">       <article class="no-article-survey"> <section data-tracking-cat="article-container" st-ve="35"><h1>Google app won't display search results</h1><div class="cc"><p>If search results aren't showing up in the Google app on your Android device, you might need to change some settings.&nbsp;You can resolve errors such as:</p>
+
+<ul>
+  <li>"Unfortunately Google Search has stopped working"</li>
+  <li>"The request was not performed because there was no connectivity"&nbsp;</li>
+</ul>
+
+<p>Follow these steps until you find the solution to your problem. <strong>Note:</strong> Settings might vary by device.</p>
+
+<h3>Step 1: Try fixing your Internet connection</h3>
+
+<div class="zippy-wrapper"><a class="zippy" name="airplane">1. Make sure your device isn't in Airplane mode</a>
+
+  <div>
+    <p>Airplane mode turns off Wi-Fi and mobile networks on your device. If you see an airplane icon at the top of your screen, Airplane mode is on.</p>
+
+    <p>To turn off Airplane mode:</p>
+
+    <ol>
+      <li>Open the Settings app.</li>
+      <li>Under "Wireless &amp; networks," tap <strong>More</strong>.</li>
+      <li>Turn off "Airplane mode."</li>
+    </ol>
+
+    <p>Try your search again to see if search results show up now.</p>
+  </div>
+</div>
+
+<div class="zippy-wrapper"><a class="zippy" name="wifi">2. Check your Wi-Fi connection</a>
+
+  <div>
+    <p>If you're trying to use Wi-Fi to connect to the Internet, you might need to adjust your Wi-Fi settings.</p>
+
+    <p>To turn on Wi-Fi and choose a network:</p>
+
+    <ol>
+      <li>Open the Settings app.</li>
+      <li>Under "Wireless &amp; networks," tap <strong>Wi-Fi</strong>.</li>
+      <li>Turn on "Wi-Fi."</li>
+      <li>Choose a network and enter a password if asked.</li>
+    </ol>
+
+    <p>A Wi-Fi icon should appear at the top of your screen. Try your search again to see if search results show up now. If they don't, see troubleshooting tips below.</p>
+
+    <p><strong>If the icon has a "?":</strong> Wi-Fi is turned on, but you haven't connected to a network. Follow the steps to turn on Wi-Fi and choose a network.</p>
+
+    <p><strong>If the icon has a "!":</strong> You're connected to a Wi-Fi network but not to the Internet.</p>
+
+    <ul>
+      <li>Make sure you've chosen the right network.</li>
+      <li>If you're using a public Wi-Fi network (like at a cafe or airport), you might need to enter a password or sign in. Try opening a webpage in your browser to see if there's a sign-in screen.</li>
+      <li>If the Wi-Fi modem is yours, restart it. If that doesn't work, contact your Internet provider.</li>
+    </ul>
+
+    <p><strong>If the icon is partially filled or blinking:</strong> Your device has a weak connection to the Wi-Fi network or it's still trying to connect.</p>
+
+    <ul>
+      <li>Make sure you've chosen the right network.</li>
+      <li>If you know where the router is, move closer to it to get a stronger signal.</li>
+      <li>If the Wi-Fi router is yours, restart it.</li>
+    </ul>
+
+    <p><strong>If Wi-Fi still doesn't work:</strong> You might need to use a mobile data connection instead. Turn off Wi-Fi and try your search again to see if search results show up now.</p>
+  </div>
+</div>
+
+<div class="zippy-wrapper"><a class="zippy" name="data">3. Check your mobile data connection</a>
+
+  <div>
+    <p>When Wi-Fi isn't available, you can connect to the Internet with a mobile data connection.</p>
+
+    <p>To check your mobile data connection:</p>
+
+    <ul>
+      <li>Open your mobile browser and try loading any webpage. If the page doesn't load, follow the steps below.</li>
+    </ul>
+
+    <p>To turn on mobile data:</p>
+
+    <ol>
+      <li>Open the Settings app.</li>
+      <li>Under "Wireless &amp; networks," tap <strong>Data usage</strong>.</li>
+      <li>Turn on "Cellular data" or "Mobile data." If it was already on, turn it off, then on again.</li>
+    </ol>
+
+    <p>At the top of your screen, you should see your signal strength and type of data connection (like LTE). Try your search again to see if search results show up now. If they don't, or if you see a no-signal icon, try the troubleshooting tips below.</p>
+
+    <h4>1. Get to an area with better coverage</h4>
+
+    <p>You might be in an area without coverage. For example, underground and rural locations sometimes don't have mobile data connections. If you can, move to a different area and check your signal strength.</p>
+
+    <h4>2. Contact your mobile service provider</h4>
+
+    <p>If your device often has problems with mobile data connections, get in touch with your service provider.</p>
+  </div>
+</div>
+
+<h3>Step 2: Try fixing the Google app</h3>
+
+<div class="zippy-wrapper"><a class="zippy" name="restart_app">1. Restart the Google app</a>
+
+  <div>
+    <ol>
+      <li>Open the Settings app.</li>
+      <li>Under "Device," tap <strong>Apps</strong> or <strong>Application manager</strong>.</li>
+      <li>Select <strong>Google App</strong> &gt;&nbsp;<strong>Force stop&nbsp;&gt;&nbsp;</strong><strong>OK</strong>.</li>
+    </ol>
+
+    <p>Try your search again to see if search results show up now.</p>
+  </div>
+</div>
+
+<div class="zippy-wrapper"><a class="zippy" name="restart_device">2. Restart your device</a>
+
+  <div>Restart your device, then try your search again to see if search results show up now.</div>
+</div>
+
+<div class="zippy-wrapper"><a class="zippy" name="update">3. Update the Google app</a>
+
+  <div>
+    <p>If you can connect to the Internet, update the <a href="https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox" target="_blank">Google app</a> to the latest version.</p>
+
+    <p>Try your search again to see if search results show up now.</p>
+  </div>
+</div>
+
+<div class="zippy-wrapper"><a class="zippy" name="clear_cache">4. Clear your Google app cache</a>
+
+  <div>
+    <p>When you clear an app's cache, you delete data stored in a temporary area of the device's memory. This action won't delete any permanent files.</p>
+
+    <p>To clear your Google app cache:</p>
+
+    <ol>
+      <li>Open the Settings app.</li>
+      <li>Under "Device," tap <strong>Apps</strong> or <strong>Application manager</strong>.</li>
+      <li>Select <strong>Google App</strong>.</li>
+      <li>Under "Storage" or "Cache," tap <strong>Clear cache</strong>.</li>
+    </ol>
+
+    <p>Try your search again to see if search results show up now.</p>
+  </div>
+</div>
+
+<div class="zippy-wrapper"><a class="zippy" name="clear_data">5. Clear your Google app data</a>
+
+  <div>
+    <p>When you clear an app's data, you permanently delete all of the app's data, including files and settings.</p>
+
+    <p>To clear your Google app data:</p>
+
+    <ol>
+      <li>Open the Settings app.</li>
+      <li>Under "Device," tap <strong>Apps</strong> or <strong>Application manager</strong>.</li>
+      <li>Select <strong>Google App</strong>.</li>
+      <li>Under "Storage," tap <strong>Manage space</strong> &gt;&nbsp;<strong>Clear Google search data</strong>.</li>
+    </ol>
+
+    <p>Try your search again to see if search results show up now.</p>
+  </div>
+</div>
+
+<p>Keep in mind that many problems resolve on their own. If you followed these steps and search results still don't show up, try again in a few hours.</p>
+</div></section>      </article>  <script>
+    window['prt']= new Date().getTime();
+    window['iml'] = new Date().getTime();
+    try { window.console.timeStamp('CSI/prt'); } catch (e) {}
+  </script>          </div>   <textarea class="csi" name="csi"></textarea>      <script>window['sc_log']= function(){};</script> <script>(function(){var bcUrl='https://support.google.com/websearch/answer/6385818?hl\x3den';var rr=false;window['sc_refresh']= !rr ?true :false;if (!window['sc_dbg']){window['sc_dbg']= function(){};}
+})();</script> <script data-id="page">var Nf;function Of(a){return(a=/^\/([^/]+)/.exec(a.pathname))?a[1]:""}
+function Pf(a){a=a.getAttribute("href");return"#"==a[0]||0==a.indexOf("javascript:")}
+function Qf(a){var b=C();Nf||(Nf=xa(b.bcUrl));var c=a.getAttribute("href"),b=b?b.legacy_url:null;return(0==c.indexOf("http")||0==c.indexOf("//"))&&(!b||-1==c.indexOf(b))&&a.host!=Nf.host}
+function Rf(a){this.b=a;this.a=[]}
+var Sf=!1;function Tf(a){a.b.visit_id||(a.b.visit_id=window.sc_visit_id);if(!Sf){var b=document.getElementsByTagName("body")[0],c=a.c.bind(a);b.addEventListener("click",c);Sf=!0;document.addEventListener("pjaxunload",function(){b.removeEventListener("click",c);Sf=!1})}Uf()}
+Rf.prototype.f=function(a){for(var b=0;b<a.length;b++)this.a.push(a[b])};Rf.prototype.c=function(a){for(var b=1!==a.target.nodeType?a.target.parentNode:a.target,c=!1,d=!1,e="",f=!1;b&&b.getAttribute;){var g=b.getAttribute("href");if("A"===b.nodeName&&g){f="_blank"==b.target||a.ctrlKey||a.shiftKey||a.metaKey||1==a.button;Qf(b)?c=!0:Pf(b)||(d=!0,e=Of(b));break}else b=b.parentNode}a={event:a,element:b,blank:f,external:c,hc_internal:d,href:g,target_hc:e};window.sc_visitManagerProcessClick(a);for(b=0;b<this.a.length;b++)this.a[b](a)};function Uf(){for(var a=(window.sc_scope||document).querySelectorAll("select"),b=0;b<a.length;b++){var c=a[b];c.addEventListener("mousedown",function(){ya(!0)});c.addEventListener("change",function(){ya(!1)})}}
+window.sc_initPage=function(a){a=new Rf(a);Tf(a);if(1==window.sc_refresh){var b;window.sc_pageModel&&(b=window.sc_pageModel.iro);window.sc_pageModel=a.b;b&&(window.sc_pageModel.iro=b);window.sc_registerPageClickHandlers=a.f.bind(a)}};</script>  <script>(function(){var au='';var bcUrl='https://support.google.com/websearch/answer/6385818?hl\x3den';var dt=1;var ehc='websearch';var ehn='https://support.google.com';var hc='websearch';var hcid='55';var lang='en';var mxp=[0];var ncc=0;var pid='6385818';var pvid='';var pt=1;var query='';var iro=4;var rs=0;var rr=false;var rtl=false;var visit_id='';var xsrf='';var legacy_url='google.com/support';var query_params=[{key:'hl',value:'en'}];var cl='124383638';var ff=false;window['sc_initPage']({'au':au,'bcUrl':bcUrl,'dt':dt,'ehc':ehc,'ehn':ehn,'hc':hc,'hcid':hcid,'iro':iro,'lang':lang,'mendel_ids':mxp || [],'ncc':ncc,'pid':pid,'pvid':pvid,'pt':pt,'query':'?' + query,'rr':rr,'rs':rs,'rtl':rtl,'vid':Math.floor(new Date()/ 1000),'visit_id':visit_id,'xsrf':xsrf,'query_params':query_params,'cl':cl,'ff':ff
+});})();</script> <script data-id="csi_lite">function ae(){this.a=!1}
+function be(){window.addEventListener("load",function(){if(!this.a){var a=document.querySelector(".csi");if(a&&!a.value){var b=(new Date).getTime(),c=window.prt-window.start,d=b-window.start,e=window.performance&&window.performance.timing;e&&(c=window.prt-e.responseStart,d=b-e.responseStart);window.sc_trackStatsLatency({ol:d,prt:c});window.sc_pageLatency={ol:d,prt:c};a.value=1;this.a=!0}}}.bind(new ae),!1)}
+window.sc_initCsiLite=function(){window.sc_initCsiLiteDone||(be(),window.sc_initCsiLiteDone=!0)};</script>  <script>(function(){var curl='https://support.google.com/websearch/answer/6385818?hl\x3den';window['sc_initCsiLite']({'curl':curl
+});})();</script> <script data-id="query_parameter_preserver">function fg(){gg(this)}
+var hg=["e","expid","fl","lc","rtt_override"];function gg(a){window.sc_registerPageClickHandlers([function(a){a.hc_internal&&this.b(a.element)}.bind(a)]);va.push(a.b);a.a();window.addEventListener("load",a.a.bind(a))}
+fg.prototype.b=function(a){for(var b=a.search,c=0;c<hg.length;c++){var d=hg[c],e=B(d,location.search);e&&(b=ja(d,e,b))}a.search=b};fg.prototype.a=function(){for(var a=document.querySelectorAll(".gaiabar form, .non-one-bar form, #search-form"),b=0;b<a.length;b++)for(var c=a[b],d=0;d<hg.length;d++){var e=hg[d],f=B(e);if(f){var g=c.querySelector('[name="'+e+'"]');g||(g=document.createElement("input"),g.type="hidden",g.name=e,c.appendChild(g));g.value=f}}};window.sc_initQueryParameterPreserver=function(){new fg};</script>  <script>if (window['sc_refresh']){window['sc_initQueryParameterPreserver']();}
+</script> <script data-id="analytics">function Ll(a){this.a=a;this.b=window.sessionStorage;this.f=C().mendel_ids}
+q=Ll.prototype;q.Ud=function(a){var b;a:{b=a.element;var c;b:{for(c=b;c;){if(c.getAttribute&&null!==c.getAttribute("data-tracking-ignore")){c=!0;break b}c=c.parentNode}c=!1}if(!c)for(;b;){if(b.getAttribute&&b.getAttribute("data-tracking-action")||"A"===b.tagName)break a;b=b.parentNode}b=null}if(b){if((c=b)&&("A"===c.tagName||c.parentNode&&"A"===c.parentNode.tagName)){c.parentNode&&"A"===c.parentNode.tagName&&(c=c.parentNode);var d=document.createElement("a");d.href=this.a.curl;var e=c.getAttribute("href");if(e){var f=
+"";if(0==e.indexOf("?"))f=d.pathname+e;else{var g=d.pathname.lastIndexOf("/");/^[0-9]+$/.test(e)&&-1!=g&&(f=d.pathname.substr(0,g)+"/"+e)}""!=f&&c.setAttribute("href",f)}}a=a.blank?2:Ml(b);c=[Nl(b),Ol(b),Pl(this,b),Ql(this),2!=Ml(b)];switch(a){case 1:Rl(this,b,c);break;case 2:this.oa.apply(this,c);break;case 0:Sl(this,c)||Rl(this,b,c)}}};function Rl(a,b,c){c.push(a.Td.bind(a,b));c.push(za());a.oa.apply(a,c)}
+q.Td=function(a){if(!this.a.stats){var b;if(a.getAttribute("data-tracking-delay-url"))b=a.getAttribute("data-tracking-delay-url");else if("A"===a.nodeName&&a.href){if("_blank"===a.target){window.open(a.href,"_blank");return}b=a.href}(a=window.sc_delayLocationHandler)&&a instanceof Function?a(b):F(b)}};function Ml(a){var b=a.getAttribute("data-tracking-method");if(b)switch(b.toUpperCase()){case "DELAY":return 1;case "NOW":return 2;case "DEFER":return 0}if(a.target&&"_blank"===a.target)return 2;if("A"===a.nodeName&&a.getAttribute("href")){var b=a.getAttribute("href"),c=C(),d=document.createElement("a");d.href=c.bcUrl;c=c.legacy_url;if(!(0!==b.indexOf("http")&&0!==b.indexOf("//")||c&&-1!==b.indexOf(c))&&a.host!==d.host)return 1;if("#"!==b.substr(0,1)&&"javascript:;"!==b)return 0}return 2}
+q.Vd=function(){this.a.enable_analytics_tracking&&window._gaq.push(["_trackPageview"]);try{var a=this.b.getItem("deferred");if(a){for(var b=JSON.parse(a),a=0;a<b.length;a++)this.oa.apply(this,b[a]);this.b.removeItem("deferred")}}catch(c){}this.Pb()};function Sl(a,b){if(!a.b)return!1;try{var c=a.b.getItem("deferred")||"[]",d=JSON.parse(c);d.push(b);a.b.setItem("deferred",JSON.stringify(d))}catch(e){return!1}return!0}
+q.Pb=function(a){a=(a||document).querySelectorAll("[data-tracking-impression]");for(var b=[],c=0;c<a.length;c++)b.push([Nl(a[c]),Ol(a[c],!0),Pl(this,a[c]),Ql(this),!0]);if(0!=b.length)for(c=0;c<b.length;c++)this.a.enable_analytics_tracking&&window._gaq.push(["_trackEvent"].concat(b[c]))};q.oa=function(a,b,c,d,e){c=c||Pl(this);d=d||Ql(this);this.a.enable_analytics_tracking&&window._gaq.push(["_trackEvent",a,b,c,d,e])};function Nl(a){for(;a;){if(a.getAttribute&&a.getAttribute("data-tracking-cat"))return a.getAttribute("data-tracking-cat");a=a.parentNode}return"Undefined Category"}
+function Ol(a,b){if(a.getAttribute("data-tracking-action"))return a.getAttribute("data-tracking-action");var c=a.nodeName.toLowerCase();a.getAttribute("id")&&(c+="#"+a.getAttribute("id"));a.className&&(c+="."+a.className.split(" ").join("."));a.getAttribute("href")&&(c+='[href="'+a.getAttribute("href")+'"]');a.name&&(c+='[name="'+a.name+'"]');a.getAttribute("src")&&(c+='[src="'+a.getAttribute("src")+'"]');b&&(c="Impression: "+c);return c}
+function Pl(a,b){if(b&&b.getAttribute("data-tracking-label"))return b.getAttribute("data-tracking-label");if(b&&b.getAttribute("data-tracking-idx"))return b.getAttribute("data-tracking-idx");var c=C(),c={isInternal:a.a.internal,isLoggedIn:a.a.logged_in,isRtl:c.rtl,lang:c.lang,pageId:c.pid,pageType:c.pt},d=[],e;for(e in c)c.hasOwnProperty(e)&&d.push(e+"="+c[e]);return d.join("&")}
+function Ql(a){return(new Date).getTime()-a.g}
+q.Fe=function(a,b,c,d,e,f,g){a=1!=a.nodeType?a.parentNode:a;b=[b||Nl(a),c||Ol(a),d||Pl(this,a),e||Ql(this),f||2!=Ml(a)];g?Sl(this,b)||this.oa.apply(this,b):this.oa.apply(this,b)};window.sc_initAnalytics=function(a){if(!window.sc_refresh){var b=window.sc_trackImpressions;if(b){b(window.sc_scope);return}}a=new Ll(a);a.g=(new Date).getTime();if(a.a.experiments){for(var b=[],c=0,d;d=a.a.experiments[c];c++)d&&(d=d.active_groups)&&b.push(d);b=b.join(";")}else b="";a.c=b;a.a.enable_analytics_tracking&&(b=document.createElement("script"),window._gaq=[],b.src=a.a.gajs,b.async=!0,document.getElementsByTagName("head")[0].appendChild(b),window._gaq.push(["_setAccount",a.a.analytics_id],["_setCustomVar",1,"isLoggedIn",""+a.a.logged_in,3],["_setCustomVar",2,"lang",C().lang,3],["_setCustomVar",3,"experiment",a.c,3],["_setCustomVar",4,"pageErrorType",a.a.page_error_type,3],["_setCustomVar",5,"mendelExperiments",a.f.join(";"),3]));window.sc_registerPageClickHandlers([a.Ud.bind(a)]);window.sc_trackEvent=a.oa.bind(a);window.sc_trackElement=a.Fe.bind(a);window.sc_trackImpressions=a.Pb.bind(a);window.sc_trackPageView=a.Vd.bind(a)};</script>  <script>(function(){var aid='UA-18500-19';var internal=true;var logged_in=false;var etype=0;var exp=[];var rapi=true;var gajs='https://ssl.google-analytics.com/ga.js';var eat=false;var curl='https://support.google.com/websearch/answer/6385818?hl\x3den';var cl='124383638';window['sc_initAnalytics']({'internal':internal,'logged_in':logged_in,'page_error_type':etype,'analytics_id':aid,'experiments':exp,'gajs':gajs,'enable_analytics_tracking':eat,'curl':curl,'cl':cl || '0'
+});})();</script> <script data-id="stats">function Km(a){this.a=a}
+var Lm={"primary-button":1,"action-button":2,"default-button":3,"product-link":4};q=Km.prototype;q.ce=function(){var a=C(),b=ua("statsDeferred",!0,!0);b&&(b.event.common_params.context_params.visit_id=a.visit_id,Mm(b.event,void 0,b.ehc));if(window.sc_refresh){var a=parseInt(ua("refererViewId",!1,!1),10),a=isNaN(a)?0:a,b=this.ma(1),c=b.resource.stats[0].page_view={changelist:parseInt(this.a.cl,10)};a&&(c.referer_view_id=a);Mm(b)}this.sc()};q.sc=function(a){a=(a||document).querySelectorAll("[st-imp]");for(var b=[],c=0;c<a.length;c++){var d=Z(a[c],"st-ve",Aa.id,!0),e=Z(a[c],"st-id"),f=Z(a[c],"st-idx");b.push([parseInt(d,10),e,f])}0!=b.length&&this.fb(b)};q.He=function(a,b){var c;c=b?b.id:parseInt(Z(a,"st-ve",Aa.id,!0),10);var d=Z(a,"st-id"),e=Z(a,"st-idx");this.fb([[c,d,e]])};q.fb=function(a){for(var b=this.ma(3),c=b.resource.stats[0].impressions=[],d=0;d<a.length;d++){var e=a[d],f={type:e[0]};e[1]&&(f.id=e[1]);Nm(f,e[2]);c.push(f)}Mm(b)};q.Rb=function(a,b,c,d,e){a=a.id;var f=b.id;b=this.ma(5);a={type:a,action:f};c&&(a.id=c);Nm(a,d);(b.resource.stats[0].events=[]).push(a);Mm(b,e)};q.Ge=function(a,b,c,d,e,f){b||(b=parseInt(Z(a,"st-ve",Aa.id,!0),10),b=Om(Va,b));c||(c=parseInt(Z(a,"st-action",Wa.id,f),10),c=Om(tb,c));d=d||Z(a,"st-id",void 0,f);a=e||Z(a,"st-idx",void 0,f);this.Rb(b,c,d,a)};function Om(a,b){var c,d;for(d in a){var e=a[d];if(e.id==b)return e;0==e.id&&(c=e)}return c}
+q.Ie=function(a){var b=this.ma(2);b.resource.stats[0].latency=a;Mm(b)};q.he=function(a){a.hc_internal&&ra("refererViewId",C().vid)};q.be=function(a){if(a.hc_internal||a.external){var b=a.event,c=a.element,d;a:{d=c;var e;if(e=d){b:{for(e=d;e;){if(e.hasAttribute&&e.hasAttribute("st-ignore")){e=!0;break b}e=e.parentNode}e=!1}e=!e}if(e)for(;d;){if(d.hasAttribute&&d.hasAttribute("st-action")||"A"===d.tagName)break a;d=d.parentNode}d=null}if(c&&d){c=Pm(a);e=d;var f=Z(e,"st-ve",Aa.id,!0),g=Z(e,"st-action",cb.id),h=Z(e,"st-id",e.href);a=this.ma(4);f=a.resource.stats[0].click_tracking={click_method:c,type:parseInt(f,10),action:parseInt(g,10)};h&&(f.id=h);Nm(f,Z(e,"st-idx"));for(var l in Lm)if(A(e,l)){f.content_attribute={style:Lm[l]};break}switch(c){case 2:l=d;b.preventDefault();Mm(a,this.Qb.bind(this,l));break;case 3:Mm(a);break;case 1:ra("statsDeferred",{event:a,ehc:C().ehc},!0)||(l=d,b.preventDefault(),Mm(a,this.Qb.bind(this,l)))}}}};q.ma=function(a){var b=C();a={common_params:{language:b.lang,context_params:{connection_class:b.ncc,device_type:b.dt,page_type:b.pt,referer:this.a.ref,request_source:b.rs,request_url:b.bcUrl,visit_id:b.visit_id}},resource:{stats:[{type:a,request_state:{view_id:b.vid,initial_request_origin:b.iro,page_id:b.pid}}]}};(b=b.mendel_ids)&&b.length&&(a.common_params.context_params.experiment_id=b);return a};q.Qb=function(a){var b;if(a.getAttribute&&a.getAttribute("st-delay-url"))b=a.getAttribute("st-delay-url");else if("A"===a.nodeName&&a.href){if("_blank"===a.target){window.open(a.href,"_blank");return}b=a.href}(a=window.sc_delayLocationHandler)&&a instanceof Function?a(b):F(b)};function Z(a,b,c,d){c=void 0!==c?c.toString():void 0;if(d)for(;a;)if(a.getAttribute&&a.getAttribute(b)){c=a.getAttribute(b);break}else a=a.parentNode;else a.getAttribute&&a.getAttribute(b)&&(c=a.getAttribute(b));return c?c.toLowerCase():void 0}
+function Pm(a){var b=a.element.getAttribute("st-method");if(b)switch(b.toUpperCase()){case "DELAY":return 2;case "IMMEDIATE":return 3;case "DEFER":return 1}return a.blank?3:a.external?2:a.hc_internal?1:3}
+function Nm(a,b){if(b){var c=b.split(",");c[0]&&(a.idx=parseInt(c[0],10));c[1]&&(a.count=parseInt(c[1],10))}}
+function Mm(a,b,c){D({M:"POST",endpoint:"metrics",W:{v:window.sc_useNewScapiEndpoints?"1":"0"},Y:a,yd:c,aa:b,gb:b});E(document,"sc_statsEvent",a);window.sc_sendStatsAnalytics(a)}
+window.sc_initStats=function(a){if(!window.sc_refresh){var b=window.sc_trackStatsScopedImpressions;if(b){b(window.sc_scope);return}}a=new Km(a);window.sc_registerPageClickHandlers([a.he.bind(a),a.be.bind(a)]);window.sc_trackStatsEvent=a.Rb.bind(a);window.sc_trackStatsEventByElement=a.Ge.bind(a);window.sc_trackStatsScopedImpressions=a.sc.bind(a);window.sc_trackStatsImpressions=a.fb.bind(a);window.sc_trackStatsImpressionByElement=a.He.bind(a);window.sc_trackStatsLatency=a.Ie.bind(a);window.sc_trackStatsPageView=
+a.ce.bind(a);window.sc_createStatsRequest=a.ma.bind(a)};</script>  <script>(function(){var cl='124383638';var ref='';window['sc_initStats']({'cl':cl,'ref':ref
+});})();window['sc_sendStatsAnalytics']= function(){};</script> <script data-id="visit_manager">function Qm(a){this.b=a;this.c="vid-"+C().ehc;Rm(this)}
+function Rm(a){var b={visit_id:C().visit_id,time:(new Date).getTime()};ra(a.c,b,!0);a.a(void 0,b);va.push(function(a){Qf(a)||Pf(a)||this.a(Of(a))}.bind(a))}
+Qm.prototype.f=function(a){a.hc_internal&&this.a(a.target_hc)};Qm.prototype.a=function(a,b){var c=C(),d=b;d||(d=ua(a&&a!=c.ehc?"vid-"+a:this.c,!1,!0));var e="",f="Thu, 01-Jan-1970 00:00:01 GMT";if(d){var g=(new Date).getTime();d.time+this.b.vttl<g||(e=encodeURIComponent(d.visit_id),f=(new Date(g+this.b.vttl)).toUTCString())}d=document.createElement("a");d.href=c.ehn;document.cookie="SUPPORT_CONTENT="+c.hcid+"|"+e+";domain="+d.hostname+";path=/;max-age="+Math.floor(this.b.vttl/1E3)+";expires="+f};window.sc_initVisitManager=function(a){a=new Qm(a);window.sc_visitManagerProcessClick=a.f.bind(a);window.sc_setVisitIdCookie=a.a.bind(a)};</script>  <script>(function(){var vttl=1800000;window['sc_initVisitManager']({'vttl':vttl
+});})();</script> <script data-id="top_timer">function kl(a){this.g=a;this.a=[];this.f="hidden";this.i=this.b=this.c=0;ll(this)}
+function ll(a){if(-1!=a.g.delays){for(var b=a.g.delays.split(","),c=0;c<b.length;c++)a.a.push(parseInt(b[c],10));for(var b="",d=["moz","ms","webkit"],c=0;c<d.length;c++){var b=d[c],e=b+"Hidden";"undefined"!=typeof document[e]&&(a.f=e)}document.addEventListener(b+"visibilitychange",a.l.bind(a));ml(a,a.a[0]);document.addEventListener("pjaxunload",function(){nl(this);this.a=[]}.bind(a))}}
+kl.prototype.l=function(){document[this.f]?this.b&&nl(this):!this.b&&0<this.a.length&&ml(this,this.i)};function ml(a,b){a.c=Date.now()+b;a.b=window.setTimeout(a.m.bind(a),b)}
+function nl(a){a.i=a.c-Date.now();window.clearTimeout(a.b);a.b=0}
+kl.prototype.m=function(){var a=za();a.top=this.a[0]/1E3;a.page_view_id=C().pvid;var b=window.sc_createStatsRequest(6);b&&(a.common_params=b.common_params,a.resource=b.resource);D({M:"POST",endpoint:"top",Y:a});a=this.a.shift();0<this.a.length?ml(this,this.a[0]-a):this.b=0};window.sc_initTopTimer=function(a){new kl(a)};</script>  <script>(function(){var delays='2000,5000,10000,30000,60000';if (window['sc_refresh']== true){window['sc_initTopTimer']({'delays':delays
+});}
+})();</script> <script data-id="search">function Ek(a){this.a=null;this.c=a}
+function Fk(a){z(a.a,"show-search");var b=document.getElementById("search-toggle");if(A(a.a,"show-search")){var c=document.getElementById("search-box");c&&c.focus();b.setAttribute("aria-label",a.c.close)}else b.setAttribute("aria-label",a.c.search);a=document.getElementsByClassName("search-toggle");for(b=0;b<a.length;b++)z(a[b],"active")}
+Ek.prototype.b=function(){Fk(this)};Ek.prototype.f=function(a){if(A(a,"active")){if(a=document.getElementById("search-box"))a.value="",a.focus()}else Fk(this)};function Gk(a){a.a=document.getElementById("search-container");if(a.a){var b=a.a.getElementsByTagName("form")[0];if(b){var c=document.getElementById("search-back"),d=document.getElementById("search-toggle"),e=document.getElementsByClassName("search-overlay")[0];c&&c.addEventListener("click",a.b.bind(a));d&&d.addEventListener("click",a.f.bind(a,d));e&&e.addEventListener("click",a.b.bind(a));var f=!1;b.addEventListener("submit",function(a){a.preventDefault();(a=b.elements.q.value)&&!f&&(window.sc_trackStatsEvent(Ea,mb,a),f=!0,F(b.action+(-1==b.action.indexOf("?")?"?":"&")+"q="+encodeURIComponent(a)))})}}}
+window.sc_initSearch=function(a){Gk(new Ek(a))};</script>  <script>(function(){var close='Close';var search='Search';window['sc_initSearch']({close:close,search:search
+});})();</script> <script data-id="zippy">function Dl(a){this.a=a||document}
+function El(){for(var a=new Dl(window.sc_scope),b=a.a.querySelectorAll(".zippy"),c=null,d=0;d<b.length;d++){var e=d+1,f=b[d],g=f.nextElementSibling;if(g&&("DIV"===g.nodeName||"P"===g.nodeName)){var h=document.createElement("DIV");z(h,"zippy-container",!0);f.parentNode.replaceChild(h,f);h.appendChild(f);var l=document.createElement("DIV");l.className="zippy-overflow";g.parentNode.insertBefore(l,g);l.appendChild(g);z(f,"index"+e,!0);z(g,"zippy-content",!0);A(f,"zippy-expand")||f.name&&Fl(C().query+
+window.location.hash,f.name)?(z(f,"goog-zippy-expanded",!0),g.removeAttribute("aria-hidden"),f.setAttribute("aria-expanded",!0),g.style.marginTop=0,!c&&f.name&&Fl(C().query+window.location.hash,f.name)&&(c=f)):(Gl(g),g.style.height=g.style.padding=0,g.setAttribute("aria-hidden",!0),f.setAttribute("aria-expanded",!1),z(g,"zippy-hidden",!0),z(f,"goog-zippy-collapsed",!0));window.addEventListener("resize",function(a){A(a,"zippy-hidden")&&Hl(a,"",function(){Gl(a)}.bind(this))}.bind(a,g));(l=l.nextElementSibling)&&A(l,"zippy")||z(h,"zippy-last",!0);f.tabIndex=0;f.addEventListener("click",a.b.bind(a,g,f));f.addEventListener("keydown",a.f.bind(a,g,f));f.setAttribute("data-tracking-impression","");f.setAttribute("st-ve",Ba.id);f.setAttribute("st-imp","");f.setAttribute("st-idx",e+","+b.length);f.setAttribute("st-ignore","");Il(a,f,g)}}c&&c.scrollIntoView()}
+function Hl(a,b,c){a.style.transition!=b?(a.style.transition=b,window.setTimeout(c,0)):c()}
+function Fl(a,b){return(new RegExp("[?#&,]"+ia(b)+"(?:[#&,]|$)")).test(a)}
+function Gl(a){a.style.marginTop=-a.offsetHeight+"px"}
+Dl.prototype.b=function(a,b){z(a,"zippy-hidden");z(b,"goog-zippy-expanded");z(b,"goog-zippy-collapsed");var c;A(b,"goog-zippy-expanded")?(a.removeAttribute("aria-hidden"),b.setAttribute("aria-expanded",!0),c=Ya,Jl(a)):(a.setAttribute("aria-hidden",!0),b.setAttribute("aria-expanded",!1),c=Za,Hl(a,"margin-top .218s ease-out",function(){Gl(a)}.bind(this)));window.sc_trackStatsEventByElement(b,Ba,c)};Dl.prototype.f=function(a,b,c){switch(c.which){case 13:case 32:c.preventDefault(),this.b(a,b)}};function Jl(a){Kl(a);a.style.height=a.style.padding="";Hl(a,"margin-top .218s ease-out",function(){a.style.overflow="auto";a.style.marginTop=0});E(document,"imgLazyLoad")}
+function Kl(a){a=a.getElementsByClassName("goog-zippy-collapsed");for(var b=0;b<a.length;b++){var c=a[b].parentNode.nextElementSibling;c&&(c=c.firstChild)&&Gl(c)}}
+function Il(a,b,c){if(b.name)for(var d=a.a.getElementsByTagName("a"),e=0;e<d.length;e++){var f=d[e];Fl(f.href,b.name)&&f.addEventListener("click",a.c.bind(a,b,c))}}
+Dl.prototype.c=function(a,b){A(a,"goog-zippy-expanded")||(z(b,"zippy-hidden",!1),z(a,"goog-zippy-expanded",!0),z(a,"goog-zippy-collapsed",!1),Jl(b),window.sc_trackStatsEventByElement(a,Ba,Ya))};window.sc_initZippy=function(){El()};</script>  <script>window['sc_initZippy']();(function(){var rid='default';if (rid && typeof window[rid]=== 'function'){window[rid]({'getChild':function(){}});}
+})();</script> <script>if (window['sc_refresh']== true){window['sc_trackPageView']();window['sc_trackStatsPageView']();}
+</script>    <input value="prober-tag-websearch-en" id="prober-tag" type="hidden">  </body></html>

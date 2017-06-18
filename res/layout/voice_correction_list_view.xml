@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/search_bg" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/web_suggestion_list_top_margin" thegoogle:columnCount="1" thegoogle:layout_appearAnimationType="grow" thegoogle:layout_canDismiss="false" thegoogle:layout_canDrag="false" thegoogle:layout_column="span_all"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:thegoogle="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/suggestions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/suggestions_footer_divider" android:background="@color/suggestion_divider_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textStyle="italic" android:gravity="right" android:id="@id/suggestions_respeak_tip" android:padding="@dimen/unit" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="right" android:id="@id/suggestions_footer" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip">
+        <Button android:id="@id/respeak_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/voice_correction_respeak" style="@style/VoiceCorrectionButton" />
+    </LinearLayout>
+</LinearLayout>

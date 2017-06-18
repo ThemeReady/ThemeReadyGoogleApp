@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.gsa.searchbox.client.gsa.ui.features.voiceplatediscoverability.VoicePlateDiscoverabilityDownArrow android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.gsa.searchbox.ui.suggestions.views.SuggestionIconView android:id="@id/label_icon" android:padding="@dimen/voice_plate_discoverability_down_arrow_hit_box_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_expand_more_white_24" android:tint="@color/voice_plate_discoverability_down_arrow_color" android:layout_above="@id/space_below_icon" android:layout_centerHorizontal="true" android:contentDescription="@string/voice_plate_discoverability_down_arrow" />
+    <Space android:id="@id/space_below_icon" android:layout_width="fill_parent" android:layout_height="@dimen/voice_plate_discoverability_down_arrow_bottom_margin" android:layout_alignParentBottom="true" />
+</com.google.android.apps.gsa.searchbox.client.gsa.ui.features.voiceplatediscoverability.VoicePlateDiscoverabilityDownArrow>

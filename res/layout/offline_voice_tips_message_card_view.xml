@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.gsa.shared.ui.messages.MessageCardView android:orientation="vertical" android:id="@id/offline_voice_tips_message_card_view" android:background="@drawable/card_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/offline_voice_tips_message_card_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/offline_voice_tips_card_content">
+        <TextView android:id="@id/offline_voice_tips_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/offline_header_text" style="@style/offline_voice_tips_title_text" />
+        <TextView android:id="@id/offline_voice_tips_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/offline_options_start_hotword_disabled" style="@style/offline_voice_tips_subtitle_text" />
+        <LinearLayout android:orientation="vertical" android:id="@id/offline_voice_tips_options" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/offline_voice_tips_options" />
+    </LinearLayout>
+</com.google.android.apps.gsa.shared.ui.messages.MessageCardView>

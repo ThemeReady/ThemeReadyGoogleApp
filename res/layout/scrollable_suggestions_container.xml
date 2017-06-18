@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.gsa.shared.ui.CoScrollContainer android:id="@id/search_suggestions_scrollview" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/web_suggestion_list_top_margin" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:thegoogle="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.gsa.shared.ui.SuggestionGridLayout android:layout_gravity="center|top" android:id="@id/search_suggestions_container" android:paddingLeft="8.0dip" android:paddingTop="@dimen/web_suggestion_list_top_padding" android:paddingRight="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" thegoogle:columnCount="@integer/cards_column_count" thegoogle:layout_fillViewport="true" thegoogle:verticalItemMargin="8.0dip" />
+</com.google.android.apps.gsa.shared.ui.CoScrollContainer>

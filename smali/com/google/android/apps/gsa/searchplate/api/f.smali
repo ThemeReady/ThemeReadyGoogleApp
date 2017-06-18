@@ -1,0 +1,104 @@
+.class public Lcom/google/android/apps/gsa/searchplate/api/f;
+.super Lcom/google/android/apps/gsa/searchplate/api/h;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/apps/gsa/searchplate/api/e;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/apps/gsa/searchplate/api/h;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(ILjava/lang/String;Ljava/lang/String;Lcom/google/android/apps/gsa/searchplate/a/a;)V
+    .locals 0
+
+    .prologue
+    .line 7
+    return-void
+.end method
+
+.method public a(Lcom/google/android/apps/gsa/searchplate/api/c;)V
+    .locals 0
+
+    .prologue
+    .line 3
+    return-void
+.end method
+
+.method public a(Lcom/google/android/apps/gsa/shared/util/ax;)V
+    .locals 0
+
+    .prologue
+    .line 2
+    return-void
+.end method
+
+.method public akv()I
+    .locals 1
+
+    .prologue
+    .line 9
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public d(D)V
+    .locals 0
+
+    .prologue
+    .line 6
+    return-void
+.end method
+
+.method public eS(I)V
+    .locals 0
+
+    .prologue
+    .line 4
+    return-void
+.end method
+
+.method public fa(Z)V
+    .locals 0
+
+    .prologue
+    .line 5
+    return-void
+.end method
+
+.method public getView()Landroid/view/View;
+    .locals 1
+
+    .prologue
+    .line 8
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public u(Landroid/os/Bundle;)V
+    .locals 0
+
+    .prologue
+    .line 10
+    return-void
+.end method
+
+.method public v(Landroid/os/Bundle;)V
+    .locals 0
+
+    .prologue
+    .line 11
+    return-void
+.end method

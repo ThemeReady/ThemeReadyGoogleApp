@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:name="ic_cloud_loading_vector" android:height="96.0dip" android:width="96.0dip" android:viewportWidth="96.0" android:viewportHeight="96.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="ic_cloud_outlines" android:translateX="48.0" android:translateY="48.0">
+        <group android:name="ic_cloud_outlines_pivot" android:translateX="-48.0" android:translateY="-48.0">
+            <group android:name="group_1" android:translateX="48.0" android:translateY="48.0">
+                <path android:name="path_1" android:fillColor="#ff4285f4" android:pathData="M 29.4000091553,-7.80000305176 c -2.80000305176,-13.8000030518 -14.8000030518,-24.1999969482 -29.4000091553,-24.1999969482 c -11.6000061035,0.0 -21.6000061035,6.60000610352 -26.6000061035,16.1999969482 c -12.0,1.19999694824 -21.3999938965,11.4000091553 -21.3999938965,23.8000030518 c 0.0,13.1999969482 10.8000030518,24.0 24.0,24.0 c 0.0,0.0 52.0,0.0 52.0,0.0 c 11.0,0.0 20.0,-9.0 20.0,-20.0 c 0.0,-10.5999908447 -8.19999694824,-19.1999969482 -18.5999908447,-19.8000030518 Z" />
+            </group>
+        </group>
+    </group>
+    <group android:name="1" android:translateX="32.00171" android:translateY="55.99683">
+        <group android:name="1_pivot" android:translateX="439.02954" android:translateY="741.8782">
+            <group android:name="rectangle_1" android:translateX="-439.02954" android:translateY="-741.8782">
+                <path android:name="rectangle_path_1" android:fillColor="#ffffffff" android:pathData="M -4.0,-4.0 l 8.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,8.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l -8.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,-8.0 c 0.0,0.0 0.0,0.0 0.0,0.0 Z" android:strokeColor="#ffffffff" android:strokeWidth="2.0" />
+            </group>
+        </group>
+    </group>
+    <group android:name="2" android:translateX="48.00171" android:translateY="55.99683">
+        <group android:name="2_pivot" android:translateX="439.02954" android:translateY="741.8782">
+            <group android:name="rectangle_2" android:translateX="-439.02954" android:translateY="-741.8782">
+                <path android:name="rectangle_path_2" android:fillColor="#ffffffff" android:pathData="M -4.0,-4.0 l 8.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,8.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l -8.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,-8.0 c 0.0,0.0 0.0,0.0 0.0,0.0 Z" android:strokeColor="#ffffffff" android:strokeWidth="2.0" />
+            </group>
+        </group>
+    </group>
+    <group android:name="3" android:translateX="64.00171" android:translateY="55.99683">
+        <group android:name="3_pivot" android:translateX="439.02954" android:translateY="741.8782">
+            <group android:name="rectangle_3" android:translateX="-439.02954" android:translateY="-741.8782">
+                <path android:name="rectangle_path_3" android:fillColor="#ffffffff" android:pathData="M -4.0,-4.0 l 8.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,8.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l -8.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,-8.0 c 0.0,0.0 0.0,0.0 0.0,0.0 Z" android:strokeColor="#ffffffff" android:strokeWidth="2.0" />
+            </group>
+        </group>
+    </group>
+</vector>

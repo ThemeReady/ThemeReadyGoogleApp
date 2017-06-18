@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/camera_container" android:background="@color/visual_search_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.gsa.staticplugins.visualsearch.ui.camera.AutoFitTextureView android:id="@id/camera_preview_texture" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.google.android.apps.gsa.staticplugins.visualsearch.ui.camera.AROverlayView android:id="@id/ar_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
