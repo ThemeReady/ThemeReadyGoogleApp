@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale" style="@style/ResultContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/anchor_result_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/collapsed_result_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/divider_between_anchor_and_more_or_less_button" android:visibility="gone" style="@style/Divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/more_button_container_in_cluster" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:paddingStart="24.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/more_icon_in_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_expand_more_black_24" android:alpha="0.3" />
+            <TextView android:textColor="#4c000000" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/more_label_in_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="26.0dip" style="@style/SecondaryText" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/less_button_container_in_cluster" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:paddingStart="24.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/less_icon_in_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_expand_less_black_24" android:alpha="0.3" />
+            <TextView android:textColor="#4c000000" android:ellipsize="end" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_less" android:layout_marginStart="26.0dip" style="@style/SecondaryText" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

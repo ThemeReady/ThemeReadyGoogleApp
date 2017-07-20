@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/qp_column_padding" android:paddingTop="@dimen/qp_closet_row_vertical_padding" android:paddingRight="@dimen/qp_column_padding" android:paddingBottom="@dimen/qp_closet_row_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="@dimen/qp_training_place_image_width" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="@dimen/qp_column_padding" android:layout_marginStart="0.0dip" android:layout_marginEnd="@dimen/qp_column_padding" />
+    <TextView android:textColor="@color/qp_text_b1" android:id="@id/title" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/qp_h4" />
+    <TextView android:textColor="@color/qp_blue" android:id="@id/prompt" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/qp_h4" />
+</LinearLayout>

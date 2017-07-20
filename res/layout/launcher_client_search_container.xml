@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/launcher_client_search_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:thegoogle="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/search_overlay_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.apps.gsa.search.shared.overlay.SearchOverlayLayout android:id="@id/search_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.apps.gsa.search.shared.ui.ReverseDrawRestrictedLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/search_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.google.android.apps.gsa.search.shared.overlay.OverlaySearchPlateContainer android:layout_gravity="center|top" android:id="@id/search_plate_container" android:clipChildren="@bool/clip_children_and_to_padding" android:clipToPadding="@bool/clip_children_and_to_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_plate_vertical_margin" android:layout_marginBottom="@dimen/search_plate_vertical_margin">
+                    <include android:id="@id/search_plate" layout="@layout/search_plate" />
+                </com.google.android.apps.gsa.search.shared.overlay.OverlaySearchPlateContainer>
+                <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/web_suggestion_list_top_margin" android:overScrollMode="never">
+                    <LinearLayout android:orientation="vertical" android:id="@id/search_suggestions_linear" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.google.android.apps.gsa.shared.ui.SuggestionGridLayout android:layout_gravity="center|top" android:id="@id/search_suggestions_container" android:paddingLeft="@dimen/web_suggestion_list_left_right_padding" android:paddingTop="@dimen/web_suggestion_list_top_padding" android:paddingRight="@dimen/web_suggestion_list_left_right_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" thegoogle:columnCount="@integer/cards_column_count" thegoogle:verticalItemMargin="@dimen/suggestion_containers_padding_inbetween" />
+                        <com.google.android.apps.gsa.nowoverlayservice.LauncherPreviewBitmapView android:layout_gravity="center|top" android:id="@id/pixel_bitmap_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/web_suggestion_list_top_margin" />
+                    </LinearLayout>
+                </ScrollView>
+            </com.google.android.apps.gsa.search.shared.ui.ReverseDrawRestrictedLayout>
+        </com.google.android.apps.gsa.search.shared.overlay.SearchOverlayLayout>
+        <FrameLayout android:id="@id/search_box_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/assistant_settings_account_category" android:key="@string/assistant_global_preference_category">
+        <com.google.android.apps.gsa.assistant.settings.main.account.AccountPreference android:icon="@drawable/quantum_ic_person_grey600_24" android:persistent="false" android:key="@string/assistant_account_preference" />
+        <PreferenceScreen android:icon="@drawable/quantum_ic_person_grey600_24" android:persistent="false" android:title="@string/assistant_settings_about_me_title" android:key="@string/assistant_about_me_preference" android:widgetLayout="@layout/preference_widget_next" android:fragment="com.google.android.apps.gsa.assistant.settings.aboutme.PersonalInfoSettingsFragment" />
+        <PreferenceScreen android:icon="@drawable/quantum_ic_payment_grey600_24" android:persistent="false" android:title="@string/assistant_settings_payments_title" android:key="@string/assistant_payments_preference" android:widgetLayout="@layout/preference_widget_next" android:fragment="com.google.android.apps.gsa.assistant.settings.payments.PaymentsSettingsFragment" />
+        <PreferenceScreen android:icon="@drawable/quantum_ic_people_grey600_24" android:persistent="false" android:title="@string/assistant_speaker_id_enrollment_title" android:key="@string/assistant_speaker_id_enrollment_preference" android:widgetLayout="@layout/preference_widget_next" android:fragment="com.google.android.apps.gsa.assistant.settings.hotwordenrollment.AssistantSpeakerIdSettingsFragment" />
+    </PreferenceCategory>
+    <com.google.android.apps.gsa.assistant.settings.shared.PreferenceHolder android:key="@string/assistant_top_group_holder" />
+    <PreferenceCategory android:title="@string/assistant_settings_all_devices_category" android:key="@string/assistant_all_devices_preference_category" />
+    <com.google.android.apps.gsa.assistant.settings.shared.PreferenceHolder android:key="@string/assistant_middle_group_holder" />
+    <PreferenceCategory android:title="@string/assistant_settings_all_features_category" android:key="@string/assistant_all_features_preference_category" />
+</PreferenceScreen>

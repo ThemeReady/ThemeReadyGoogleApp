@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.gsa.assistant.settings.home.NamePreference android:persistent="false" android:title="@string/assistant_settings_home_group_name" android:key="@string/assistant_home_settings_room_group_name" android:dialogTitle="@string/assistant_settings_home_group_name" app:emptySummary="@string/assistant_settings_home_room_group_name_not_set" />
+    <com.google.android.apps.gsa.assistant.settings.shared.LightBackgroundPreferenceCategory android:persistent="false" android:title="@string/assistant_settings_home_group_selected_devices" android:key="@string/assistant_home_settings_group_items_category" />
+</PreferenceScreen>

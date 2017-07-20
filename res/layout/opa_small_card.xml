@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/opa_small_card_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/small_card_rounded_top" android:padding="@dimen/opa_small_card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/opa_small_card_margin" android:layout_marginRight="@dimen/opa_small_card_margin">
+        <FrameLayout android:clipChildren="false" android:layout_width="@dimen/opa_small_card_image_size" android:layout_height="@dimen/opa_small_card_image_size" android:layout_marginBottom="@dimen/opa_small_card_content_margin">
+            <com.google.android.libraries.gsa.logoview.LogoView android:id="@id/opa_small_card_logo" android:paddingLeft="@dimen/opa_small_card_logo_padding_left" android:layout_width="@dimen/opa_small_card_logo_width" android:layout_height="@dimen/opa_small_card_image_size" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/opa_small_card_title_text_size" android:layout_gravity="center" android:id="@id/opa_small_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/opa_small_card_content_margin" android:includeFontPadding="false" style="@style/Opa.Text.Title" />
+        <TextView android:textSize="@dimen/opa_small_card_summary_text_size" android:textColor="@color/quantum_black_text" android:layout_gravity="center" android:id="@id/opa_small_card_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/opa_small_card_summary_bottom_margin" android:includeFontPadding="false" style="@style/Opa.Text.Message" />
+        <Button android:textSize="@dimen/opa_small_card_button_text_size" android:layout_gravity="right" android:id="@id/opa_small_card_button" android:tag="ve=37143;track:click" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Opa.Button.Raised" />
+    </LinearLayout>
+</FrameLayout>

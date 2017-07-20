@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="ve=30732" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/liteswitch_top_divider" style="@style/LiteModeSettingDividerLine" />
+    <TextView android:text="@string/liteswitch_settings_data_savings" style="@style/LiteModeSettingsHeaderText" />
+    <View android:id="@id/liteswitch_settings_header_divider" style="@style/LiteModeSettingDividerLine" />
+    <LinearLayout android:id="@id/liteswitch_on_section" android:tag="ve=30731;track:click" style="@style/LiteModeSettingOptionLayout">
+        <LinearLayout style="@style/LiteModeSettingTextLayout">
+            <TextView android:text="@string/liteswitch_settings_lite_mode_always_on_title" style="@style/LiteModeSettingOptionTitle" />
+            <TextView android:text="@string/liteswitch_settings_lite_mode_always_on" style="@style/LiteModeSettingOptionText" />
+        </LinearLayout>
+        <RadioButton android:id="@id/liteswitch_always_on" android:contentDescription="@string/liteswitch_settings_lite_mode_always_on_title" style="@style/LiteModeSettingOptionRadioButton" />
+    </LinearLayout>
+    <View android:id="@id/liteswitch_on_section_divider" style="@style/LiteModeSettingDividerLine" />
+    <LinearLayout android:id="@id/liteswitch_auto_section" android:tag="ve=30729;track:click" android:visibility="gone" style="@style/LiteModeSettingOptionLayout">
+        <LinearLayout style="@style/LiteModeSettingTextLayout">
+            <TextView android:text="@string/liteswitch_settings_lite_mode_auto_title" style="@style/LiteModeSettingOptionTitle" />
+            <TextView android:text="@string/liteswitch_settings_lite_mode_auto" style="@style/LiteModeSettingOptionText" />
+        </LinearLayout>
+        <RadioButton android:id="@id/liteswitch_auto" android:contentDescription="@string/liteswitch_settings_lite_mode_auto_title" style="@style/LiteModeSettingOptionRadioButton" />
+    </LinearLayout>
+    <View android:id="@id/liteswitch_auto_section_divider" android:visibility="gone" style="@style/LiteModeSettingDividerLine" />
+    <LinearLayout android:id="@id/liteswitch_off_section" android:tag="ve=30730;track:click" style="@style/LiteModeSettingOptionLayout">
+        <LinearLayout style="@style/LiteModeSettingTextLayout">
+            <TextView android:text="@string/liteswitch_settings_lite_mode_never_title" style="@style/LiteModeSettingOptionTitle" />
+            <TextView android:text="@string/liteswitch_settings_lite_mode_never" style="@style/LiteModeSettingOptionText" />
+        </LinearLayout>
+        <RadioButton android:id="@id/liteswitch_never" android:contentDescription="@string/liteswitch_settings_lite_mode_never_title" style="@style/LiteModeSettingOptionRadioButton" />
+    </LinearLayout>
+    <View android:id="@id/liteswitch_off_section_divider" style="@style/LiteModeSettingDividerLine" />
+</LinearLayout>

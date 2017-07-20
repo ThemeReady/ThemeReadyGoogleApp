@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:padding="@dimen/assistant_settings_home_discovery_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/assistant_settings_home_discovery_title_text_size" android:textColor="@color/assistant_settings_home_discovery_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_settings_home_discovery_title" android:drawablePadding="@dimen/assistant_settings_home_discovery_title_drawable_padding" android:drawableStart="@drawable/quantum_ic_done_green500_24" android:textAlignment="center" />
+        <TextView android:textSize="@dimen/assistant_settings_home_discovery_body_text_size" android:textColor="@color/material_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_settings_home_discovery_body" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/assistant_home_settings_discovery_example_list" android:layout_weight="1.0" />
+    <TableRow android:gravity="bottom|center" android:layout_weight="1.0">
+        <Button android:id="@id/assistant_home_settings_discovery_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/assistant_settings_home_discovery_done_min_width" android:text="@string/assistant_settings_home_discovery_done" style="@style/Widget.AppCompat.Button.Colored" />
+    </TableRow>
+</TableLayout>

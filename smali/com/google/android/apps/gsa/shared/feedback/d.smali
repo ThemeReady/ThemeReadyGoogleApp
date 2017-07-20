@@ -1,0 +1,26 @@
+.class public interface abstract Lcom/google/android/apps/gsa/shared/feedback/d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract bj(Ljava/lang/String;)V
+.end method
+
+.method public abstract bs(Z)V
+.end method
+
+.method public abstract zV()Z
+.end method
+
+.method public abstract zW()Ljava/lang/String;
+.end method
+
+.method public abstract zX()Z
+.end method
+
+.method public abstract zY()Z
+.end method
+
+.method public abstract zZ()Z
+.end method

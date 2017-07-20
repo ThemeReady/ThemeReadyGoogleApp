@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/playback_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/progress_bar" android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ff424242" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_margin="0.0dip">
+        <ImageView android:id="@id/playback_thumbnail" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_weight="0.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0" android:layoutDirection="locale">
+            <TextView android:ellipsize="marquee" android:id="@id/playback_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@style/playback_title" />
+            <TextView android:id="@id/playback_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/playback_time" />
+        </LinearLayout>
+        <ImageView android:id="@id/rewind" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/quantum_ic_replay_10_white_24" android:scaleType="centerInside" android:layout_weight="0.0" android:contentDescription="@string/rewind" />
+        <ImageView android:id="@id/toggle_pause" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/play_pause_toggle" android:scaleType="centerInside" android:layout_weight="0.0" />
+        <ImageView android:id="@id/fast_forward" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/quantum_ic_forward_30_white_24" android:scaleType="centerInside" android:layout_weight="0.0" android:contentDescription="@string/fast_forward" />
+    </LinearLayout>
+</LinearLayout>

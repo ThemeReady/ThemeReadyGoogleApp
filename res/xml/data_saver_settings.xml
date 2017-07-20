@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/lite_mode"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:persistent="false" android:id="@id/liteswitch_enable_disable_switch" android:title="@string/liteswitch_settings_lite_mode_enable_title" android:key="liteswitch_enable_disable_switch" android:defaultValue="false" />
+    <com.google.android.apps.gsa.search.core.preferences.LiteModePreference android:persistent="false" android:layout="@layout/lite_mode" android:key="lite_mode" />
+</PreferenceScreen>

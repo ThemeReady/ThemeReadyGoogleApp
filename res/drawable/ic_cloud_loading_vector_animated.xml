@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/ic_cloud_loading_vector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="rectangle_path_1" android:animation="@anim/ic_cloud_loading_rectangle_path_1_animation" />
+    <target android:name="rectangle_path_2" android:animation="@anim/ic_cloud_loading_rectangle_path_2_animation" />
+    <target android:name="rectangle_path_3" android:animation="@anim/ic_cloud_loading_rectangle_path_3_animation" />
+</animated-vector>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:paddingTop="@dimen/ipa_contact_app_top_bottom_padding" android:paddingBottom="@dimen/ipa_contact_app_top_bottom_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/ipa_contact_app_min_height" android:textDirection="locale" android:layoutDirection="locale" android:paddingStart="@dimen/ipa_contact_app_side_padding" android:paddingEnd="@dimen/ipa_contact_app_side_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grid="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.gsa.plugins.ipa.searchboxui.views.IpaImageView android:id="@id/contact_app_icon" style="@style/ContactAppIcon" />
+</LinearLayout>

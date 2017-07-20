@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frame_thumbnail" android:background="@color/frame_thumbnail_default_color" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" android:layout_marginStart="@dimen/ipa_result_thumbnail_margin_start"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.gsa.plugins.ipa.searchboxui.views.IpaImageView android:id="@id/result_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <TextView android:layout_gravity="end|bottom|center" android:id="@id/result_thumbnail_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/OverlayText" />
+</FrameLayout>

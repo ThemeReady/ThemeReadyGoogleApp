@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GoogleNowValuePropLogoContainer">
+        <ViewStub android:id="@id/logo_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textColor="@color/quantum_black_text" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/opa_error_margin" android:layout_marginEnd="@dimen/opa_error_margin" style="@style/Opa.Text.Title" />
+    <TextView android:textColor="@color/quantum_black_text" android:id="@id/desc_1p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginStart="@dimen/opa_error_margin" android:layout_marginEnd="@dimen/opa_error_margin" style="@style/Opa.Text.Message" />
+</LinearLayout>

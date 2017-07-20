@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.gsa.opaonboarding.ui.ErrorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" errorlayout:title="@string/offline_opa_language_pack_title" errorlayout:message="@string/offline_opa_language_pack_summary" errorlayout:annotation="@string/offline_opa_language_pack_cellular_data_charge_annotation" errorlayout:footerType="actionAndCancelButtons" errorlayout:actionText="@string/offline_opa_language_pack_action_button" errorlayout:cancelText="@string/offline_opa_language_pack_cancel_button"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:errorlayout="http://schemas.android.com/apk/res-auto" />

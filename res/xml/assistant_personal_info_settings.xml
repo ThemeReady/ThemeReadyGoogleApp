@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/assistant_settings_home_work_preferences_title" android:key="@string/assistant_settings_home_work_preferences_title" android:widgetLayout="@layout/preference_widget_next" android:fragment="com.google.android.apps.gsa.assistant.settings.aboutme.HomeWorkSettingsFragment" />
+    <PreferenceScreen android:persistent="false" android:title="@string/assistant_settings_personal_info_nickname_title" android:key="@string/assistant_settings_personal_info_nickname_title" android:widgetLayout="@layout/preference_widget_next" android:fragment="com.google.android.apps.gsa.assistant.settings.aboutme.AboutMeSettingsFragment" />
+    <PreferenceScreen android:persistent="false" android:title="@string/assistant_settings_personal_info_preferences_title" android:key="@string/assistant_settings_personal_info_preferences_title" android:widgetLayout="@layout/preference_widget_next" android:fragment="com.google.android.apps.gsa.assistant.settings.aboutme.WeatherUnitsSettingsFragment" />
+    <PreferenceScreen android:persistent="false" android:title="@string/assistant_settings_personal_info_email_notification_title" android:key="@string/assistant_settings_personal_info_email_notification_title" android:widgetLayout="@layout/preference_widget_next" android:fragment="com.google.android.apps.gsa.assistant.settings.aboutme.EmailNotificationSettingsFragment" />
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:tag="ve=20361;track:click" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale" style="@style/ResultContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/message_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/message_card_min_height">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MessageResultContent">
+                <FrameLayout android:gravity="center" android:id="@id/left_frame_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ipa_message_avatar_margin_end" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/message_details_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:id="@id/message_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="@dimen/message_sender_margin_end" style="@style/PrimaryText" />
+                    <TextView android:ellipsize="end" android:id="@id/message_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingMultiplier="0.7" android:layout_marginEnd="@dimen/message_body_margin_end" style="@style/MessageText" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_gravity="end|center|top" android:id="@id/message_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/message_result_padding_top_bottom" android:layout_marginEnd="@dimen/result_padding_start_end" style="@style/TimestampText" />
+            <LinearLayout android:gravity="center" android:layout_gravity="end" android:id="@id/expand_icon" android:tag="ve=20360;track:click" android:visibility="gone" android:layout_width="@dimen/message_expand_collapse_icon_width" android:layout_height="fill_parent" android:contentDescription="@string/ipa_message_expand_icon_description">
+                <ImageView android:paddingTop="@dimen/expand_collapse_icon_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_expand_more_grey600_24" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="end" android:id="@id/collapse_icon" android:visibility="gone" android:layout_width="@dimen/message_expand_collapse_icon_width" android:layout_height="fill_parent" android:contentDescription="@string/ipa_message_collapse_icon_description">
+                <ImageView android:paddingTop="@dimen/expand_collapse_icon_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_expand_less_grey600_24" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/conversation_box" android:tag="ve=20356;visibility:hidden" android:background="#fff8f8f8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ConversationBox" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:windowActionBar="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textStyle="normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/learn_more_margin" android:text="@string/learn_more_title" android:layout_marginStart="@dimen/learn_more_margin" android:layout_marginEnd="@dimen/learn_more_margin" style="@style/LearnMoreTitleText" />
+            <TextView android:textSize="@dimen/learn_more_explanation_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/learn_more_margin" android:text="@string/learn_more_first_explanation" android:layout_marginStart="@dimen/learn_more_margin" android:layout_marginEnd="@dimen/learn_more_margin" style="@style/UoBodyText" />
+            <TextView android:textSize="@dimen/learn_more_explanation_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/learn_more_margin" android:text="@string/learn_more_second_explanation" android:layout_marginStart="@dimen/learn_more_margin" android:layout_marginEnd="@dimen/learn_more_margin" style="@style/UoBodyText" />
+            <TextView android:textSize="@dimen/learn_more_explanation_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/learn_more_margin" android:layout_marginBottom="@dimen/learn_more_margin" android:text="@string/learn_more_third_explanation" android:layout_marginStart="@dimen/learn_more_margin" android:layout_marginEnd="@dimen/learn_more_margin" style="@style/UoBodyText" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <View style="@style/Divider" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/learn_more_button_top_bottom_margin" android:layout_marginBottom="@dimen/learn_more_button_top_bottom_margin">
+            <TextView android:layout_gravity="start" android:id="@id/learn_more_dismiss_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_onboarding_dismiss_button_text" android:layout_marginStart="@dimen/learn_more_margin" style="@style/LearnMoreLinkText" />
+            <TextView android:layout_gravity="end" android:id="@id/learn_more_optin_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_onboarding_optin_button_text" android:layout_marginEnd="@dimen/learn_more_margin" style="@style/LearnMoreLinkText" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

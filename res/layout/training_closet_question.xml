@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/question_display" android:paddingLeft="@dimen/qp_column_padding" android:paddingTop="@dimen/qp_closet_row_vertical_padding" android:paddingRight="@dimen/qp_column_padding" android:paddingBottom="@dimen/qp_closet_row_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+        <TextView android:textColor="@color/qp_text_b1" android:ellipsize="end" android:id="@id/question" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" style="@style/qp_h4" />
+        <TextView android:textColor="@color/qp_text_b3" android:id="@id/answer" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" style="@style/qp_h5" />
+    </LinearLayout>
+    <ViewStub android:id="@id/question_edit_stub" android:focusable="true" android:focusableInTouchMode="true" android:inflatedId="@id/question_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

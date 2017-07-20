@@ -1,0 +1,13 @@
+.class public final Lcom/google/android/apps/gsa/assistant/settings/services/y;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final bLv:I = 0x7f0e019f
+
+.field public static final bLw:I = 0x7f0e01a0
+
+.field public static final cjM:I = 0x7f0e0147
+
+.field public static final cjN:I = 0x7f0e0149

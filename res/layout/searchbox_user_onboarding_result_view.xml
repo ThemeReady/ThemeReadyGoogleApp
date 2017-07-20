@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:tag="ve=28793" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale" style="@style/ResultContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/user_onboarding_layout" android:padding="@dimen/uo_result_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/user_onboarding_title" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uo_title_margin_top_bottom" android:layout_marginBottom="@dimen/uo_title_margin_top_bottom" android:text="@string/user_onboarding_title" style="@style/UoTitleText" />
+        <TextView android:id="@id/user_onboarding_body" android:focusable="true" android:nextFocusUp="@id/user_onboarding_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uo_text_margin_bottom" android:text="@string/user_onboarding_body_new" style="@style/UoBodyText" />
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/uo_button_height">
+            <TextView android:gravity="center" android:id="@id/uo_learn_more_link" android:focusable="true" android:nextFocusUp="@id/user_onboarding_body" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_onboarding_details_link_text" style="@style/UoLinkText" />
+            <Button android:gravity="center" android:id="@id/uo_ok_button" android:focusable="true" android:nextFocusUp="@id/uo_learn_more_link" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_onboarding_ok_button" android:layout_marginStart="16.0dip" style="@style/UoButton" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

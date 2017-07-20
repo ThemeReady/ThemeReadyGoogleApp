@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/now_tabs_overlay" android:visibility="invisible" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.gsa.sidekick.shared.overlay.HighlightView android:id="@id/overlay_background" android:background="@drawable/feature_highlight_background" android:layout_width="@dimen/feature_highlight_view_width" android:layout_height="@dimen/feature_highlight_view_width" />
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/feature_highlight_text" android:paddingBottom="@dimen/feature_highlight_text_bottom_padding" android:focusable="true" android:layout_width="@dimen/feature_highlight_text_container_width" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/feature_highlight_header_text_size" android:textColor="@color/feature_highlight_header_text_color" android:id="@id/feature_highlight_title" android:paddingBottom="@dimen/feature_highlight_between_text_padding" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+        <TextView android:textSize="@dimen/feature_highlight_body_text_size" android:textColor="@color/feature_highlight_body_text_color" android:id="@id/feature_highlight_subtitle" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

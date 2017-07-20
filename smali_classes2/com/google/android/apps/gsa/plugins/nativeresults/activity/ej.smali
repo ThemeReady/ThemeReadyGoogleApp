@@ -1,0 +1,133 @@
+.class public Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;
+.super Lcom/google/android/apps/gsa/shared/ui/drawer/DrawerFeatureInformer;
+.source "SourceFile"
+
+
+# instance fields
+.field public ekt:Z
+
+.field public eku:Z
+
+.field public ekv:Z
+
+.field public ekw:Z
+
+.field public ekx:Z
+
+
+# direct methods
+.method public constructor <init>(ZZ)V
+    .locals 1
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/apps/gsa/shared/ui/drawer/DrawerFeatureInformer;-><init>()V
+
+    .line 2
+    iput-boolean v0, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->ekt:Z
+
+    .line 3
+    iput-boolean v0, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->eku:Z
+
+    .line 4
+    iput-boolean v0, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->ekv:Z
+
+    .line 5
+    iput-boolean p1, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->ekw:Z
+
+    .line 6
+    iput-boolean p2, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->ekx:Z
+
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public isCustomizeVisible()Z
+    .locals 1
+
+    .prologue
+    .line 12
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public isRemindersAccessible()Z
+    .locals 1
+
+    .prologue
+    .line 10
+    iget-boolean v0, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->ekv:Z
+
+    return v0
+.end method
+
+.method public isRemindersVisible()Z
+    .locals 1
+
+    .prologue
+    .line 11
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public isUserOptedIntoNow()Z
+    .locals 1
+
+    .prologue
+    .line 9
+    iget-boolean v0, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->eku:Z
+
+    return v0
+.end method
+
+.method public onStart()V
+    .locals 0
+
+    .prologue
+    .line 15
+    return-void
+.end method
+
+.method public onStop()V
+    .locals 0
+
+    .prologue
+    .line 16
+    return-void
+.end method
+
+.method public shouldShowManageSearches()Z
+    .locals 1
+
+    .prologue
+    .line 13
+    iget-boolean v0, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->ekw:Z
+
+    return v0
+.end method
+
+.method public shouldShowNowCards()Z
+    .locals 1
+
+    .prologue
+    .line 8
+    iget-boolean v0, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->ekt:Z
+
+    return v0
+.end method
+
+.method public shouldShowUpdateTip()Z
+    .locals 1
+
+    .prologue
+    .line 14
+    iget-boolean v0, p0, Lcom/google/android/apps/gsa/plugins/nativeresults/activity/ej;->ekx:Z
+
+    return v0
+.end method

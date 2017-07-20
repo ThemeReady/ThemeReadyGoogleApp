@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/people_scrollable_container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/people_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/selected_people_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/selected_people" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/back_icon_on_selected_people" android:background="@drawable/shadow_circle_background" android:layout_marginTop="@dimen/carousel_item_top_padding" style="@style/CarouselItemThumbnail">
+                <ImageView android:src="@drawable/quantum_ic_arrow_back_white_48" style="@style/SelectedPeopleBackButton" />
+            </LinearLayout>
+        </FrameLayout>
+        <HorizontalScrollView android:id="@id/contact_methods_scrollable_container" android:paddingTop="@dimen/carousel_item_top_padding" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/contact_methods_container" style="@style/CarouselItemThumbnail" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

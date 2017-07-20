@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/opa_error_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opa_error_network_title" android:layout_alignParentTop="true" android:contentDescription="@string/opa_error_network_title" style="@style/Opa.Text.Title">
+        <requestFocus />
+    </TextView>
+    <TextView android:id="@id/opa_error_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/opa_error_margin" android:text="@string/opa_error_network_message" android:layout_below="@id/opa_error_title" style="@style/Opa.Text.Message" />
+    <TextView android:id="@id/opa_error_annotation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/opa_error_margin" android:layout_below="@id/opa_error_message" style="@style/Opa.Text.SecondaryMessage" />
+</RelativeLayout>

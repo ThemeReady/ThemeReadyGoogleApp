@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/google/android/apps/gsa/shared/ui/cl;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Landroid/content/Context;D)Lcom/google/android/apps/gsa/searchplate/api/f;
+.end method
+
+.method public abstract a(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/google/android/apps/gsa/shared/ui/cf;
+.end method
+
+.method public abstract aM(Landroid/content/Context;)Lcom/google/android/apps/gsa/shared/ui/cm;
+.end method

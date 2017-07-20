@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale" style="@style/ResultContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/uo_result_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:id="@id/permission_request_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uo_text_margin_bottom" style="@style/PermissionGrantTitleText" />
+        <Button android:id="@id/permission_request_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permission_grant_button_text" style="@style/PermissionGrantButton" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

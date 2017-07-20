@@ -1,0 +1,19 @@
+.class public final Lcom/google/android/apps/gsa/staticplugins/cw/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public cEh:Lcom/google/android/libraries/gcoreclient/g/a/a/c;
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

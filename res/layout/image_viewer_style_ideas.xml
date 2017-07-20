@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/style_ideas_layout" android:tag="ve=32171;track:click;visibility:hidden" android:background="@android:color/white" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff767676" android:gravity="center_vertical" android:id="@id/style_ideas_title" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_marginLeft="15.0dip" android:text="@string/image_viewer_style_ideas_title" android:fontFamily="sans-serif-medium" android:layout_marginStart="15.0dip" />
+    <include android:id="@id/style_ideas_image_grid" layout="@layout/image_viewer_image_grid" />
+</LinearLayout>

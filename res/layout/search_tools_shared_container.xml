@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="center_vertical" android:id="@id/search_tools_scroll_view" android:background="@drawable/corpus_selector_styling" android:scrollbars="none" android:fadingEdgeLength="@dimen/search_tools_bar_fading_edge_length" android:layout_width="fill_parent" android:layout_height="@dimen/search_tools_bar_height" android:requiresFadingEdge="horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_tools_text_buttons" android:background="@drawable/corpus_selector_styling" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sans-serif-medium" />
+</HorizontalScrollView>

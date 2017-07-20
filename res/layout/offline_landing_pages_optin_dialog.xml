@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/olp_optin_dialog" android:background="@color/olp_optin_dialog_background_color" android:layout_width="@dimen/olp_optin_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_horizontal" android:id="@id/olp_optin_dialog_illustration" android:background="@drawable/olp_optin_dialog_illustration_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/olp_illustration" android:contentDescription="@null" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/olp_optin_dialog_title" style="@style/olp_optin_dialog_title_text" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/olp_optin_dialog_explanation" style="@style/olp_optin_dialog_explanation_text" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/olp_optin_dialog_medium_padding" android:layout_marginRight="@dimen/olp_optin_dialog_medium_padding" android:layout_marginStart="@dimen/olp_optin_dialog_medium_padding" android:layout_marginEnd="@dimen/olp_optin_dialog_medium_padding">
+        <Button android:id="@id/olp_optin_dialog_decline_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/olp_optin_dialog_decline" android:layout_alignParentLeft="true" android:onClick="onDeclineClicked" android:layout_alignParentStart="true" style="@style/olp_optin_dialog_button" />
+        <Button android:id="@id/olp_optin_dialog_accept_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/olp_optin_dialog_accept" android:layout_alignParentRight="true" android:onClick="onAcceptClicked" android:layout_alignParentEnd="true" style="@style/olp_optin_dialog_button" />
+    </RelativeLayout>
+</LinearLayout>

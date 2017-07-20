@@ -1,0 +1,7 @@
+.class public final Lcom/google/android/apps/gsa/staticplugins/nowcards/p/q;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final lIO:I = 0x7f04032f

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/search_box" android:paddingTop="@dimen/minus_one_header_top_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/minus_one_header_start_padding" android:paddingEnd="@dimen/minus_one_header_end_padding">
+                <ImageView android:id="@id/super_g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/qp_column_padding" android:src="@drawable/super_g" android:contentDescription="@null" android:layout_marginEnd="@dimen/qp_column_padding" /> />
+<TextView android:textSize="@dimen/minus_one_header_search_hint_text_size" android:textColor="@color/minus_one_black_38" android:id="@id/header_hint" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/minus_one_header_search_hint" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/goldbox" android:background="?android:selectableItemBackground" android:layout_width="@dimen/minus_one_header_action_width" android:layout_height="@dimen/minus_one_header_action_height" android:scaleType="centerInside" android:contentDescription="@string/updates_content_description" />
+                <ImageButton android:id="@id/snowman" android:background="?android:selectableItemBackground" android:layout_width="@dimen/minus_one_header_action_width" android:layout_height="@dimen/minus_one_header_action_height" android:scaleType="centerInside" android:contentDescription="@string/options_content_description" />
+            </LinearLayout>
+            <View android:background="@color/minus_one_hairline_tint" android:layout_width="fill_parent" android:layout_height="@dimen/minus_one_hairline_height" android:layout_marginTop="@dimen/minus_one_hairline_top_margin" android:layout_marginBottom="@dimen/minus_one_hairline_bottom_margin" />
+        </LinearLayout>
+        <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/shortcuts_stub" android:layout_width="fill_parent" android:layout_height="@dimen/shortcuts_reserved_height" android:layout_marginBottom="@dimen/shortcuts_margin_bottom" android:layout_marginEnd="@dimen/shortcuts_margin_end" />
+    </LinearLayout>
+    <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/feature_highlight_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/separator" android:background="@color/qp_card_separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:ellipsize="end" android:id="@android:id/title" android:paddingLeft="@dimen/qp_column_padding" android:paddingTop="@dimen/qp_closet_row_vertical_padding" android:paddingRight="@dimen/qp_column_padding" android:paddingBottom="@dimen/qp_closet_row_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" style="@style/qp_preference_header" />
+</LinearLayout>
