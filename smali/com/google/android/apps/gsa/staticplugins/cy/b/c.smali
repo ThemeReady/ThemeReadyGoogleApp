@@ -86,7 +86,7 @@
     .locals 6
 
     .prologue
-    const v4, -0x50506
+    const v4, -0xcfcfd0
 
     const/high16 v5, 0x40000000    # 2.0f
 

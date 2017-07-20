@@ -533,7 +533,7 @@
 
     move-result-object v0
 
-    const v4, 0x106000b
+    const v4, 0x7f0d0071 # @color/card_bg
 
     invoke-virtual {p0, v4}, Lcom/google/android/apps/gsa/assistant/settings/services/hq/agentdirectory/AgentDirectoryActivity;->getColor(I)I
 

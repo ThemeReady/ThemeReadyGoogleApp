@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="200.0dip" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="#ff00aaee" android:layout_width="180.0dip" android:layout_height="320.0dip" android:layout_centerInParent="true" />
+    <View android:background="@color/quantum_teal400" android:layout_width="180.0dip" android:layout_height="320.0dip" android:layout_centerInParent="true" />
 </RelativeLayout>

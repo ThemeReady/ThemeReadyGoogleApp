@@ -6,11 +6,11 @@
         <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_labels" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/image_viewer_video_watch_label" android:layout_marginEnd="6.0dip" />
         <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_labels" android:layout_gravity="center_vertical" android:id="@id/video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginStart="6.0dip" />
     </LinearLayout>
-    <LinearLayout android:orientation="horizontal" android:id="@id/video_author_row" android:background="@android:color/white" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@id/video_author_row" android:background="@color/lotic_carousel_logo_image_background" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_labels" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="@string/image_viewer_video_author_label" android:layout_marginEnd="7.0dip" />
         <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_values" android:id="@id/video_author" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </LinearLayout>
-    <LinearLayout android:orientation="horizontal" android:id="@id/video_details_top_row" android:background="@android:color/white" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@id/video_details_top_row" android:background="@color/lotic_carousel_logo_image_background" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0" android:layout_marginEnd="10.0dip">
             <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_labels" android:id="@id/video_details_label_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_marginEnd="7.0dip" />
             <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_values" android:id="@id/video_details_value_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
@@ -20,7 +20,7 @@
             <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_values" android:id="@id/video_details_value_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout android:orientation="horizontal" android:id="@id/video_details_bottom_row" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@id/video_details_bottom_row" android:background="@color/lotic_carousel_logo_image_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0" android:layout_marginEnd="10.0dip">
             <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_labels" android:id="@id/video_details_label_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_marginEnd="7.0dip" />
             <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_values" android:id="@id/video_details_value_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
@@ -30,7 +30,7 @@
             <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_values" android:id="@id/video_details_value_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:background="@color/lotic_carousel_logo_image_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <TextView android:textSize="@dimen/image_viewer_rich_metadata_font_size" android:textColor="@color/image_viewer_rich_metadata_labels" android:id="@id/video_description" android:paddingTop="@dimen/image_viewer_rich_metadata_margin_top" android:paddingBottom="@dimen/image_viewer_rich_metadata_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/image_viewer_metadata_margin_right" android:layout_marginEnd="@dimen/image_viewer_metadata_margin_right" />
     </LinearLayout>
 </com.google.android.apps.gsa.plugins.images.viewer.VideoMetadataView>

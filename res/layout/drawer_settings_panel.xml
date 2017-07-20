@@ -2,5 +2,5 @@
 <merge
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:id="@id/settings_speed_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" style="@style/settings_label" />
-    <SeekBar android:id="@id/settings_speed_slider" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:max="15" android:progressBackgroundTint="#42000000" />
+    <SeekBar android:id="@id/settings_speed_slider" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:max="15" android:progressBackgroundTint="@color/audio_progress_bar_color" />
 </merge>

@@ -3,16 +3,16 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/qp_column_padding" android:paddingRight="@dimen/qp_column_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <FrameLayout android:id="@id/driving_mode_target" android:layout_width="@dimen/card_action_button_width" android:layout_height="@dimen/card_action_button_height" android:layout_weight="1.0" android:contentDescription="@string/time_to_leave_travel_driving">
-            <ImageView android:layout_gravity="center" android:id="@id/driving_mode" android:layout_width="@dimen/qp_action_icon_size" android:layout_height="@dimen/qp_action_icon_size" android:src="@drawable/ic_directions_car" android:tint="@android:color/black" android:alpha="0.38" />
+            <ImageView android:layout_gravity="center" android:id="@id/driving_mode" android:layout_width="@dimen/qp_action_icon_size" android:layout_height="@dimen/qp_action_icon_size" android:src="@drawable/ic_directions_car" android:tint="@color/done_text_color_normal" android:alpha="0.38" />
         </FrameLayout>
         <FrameLayout android:id="@id/transit_mode_target" android:layout_width="@dimen/card_action_button_width" android:layout_height="@dimen/card_action_button_height" android:layout_weight="1.0" android:contentDescription="@string/time_to_leave_travel_transit">
-            <ImageView android:layout_gravity="center" android:id="@id/transit_mode" android:layout_width="@dimen/qp_action_icon_size" android:layout_height="@dimen/qp_action_icon_size" android:src="@drawable/ic_directions_transit" android:tint="@android:color/black" android:alpha="0.38" />
+            <ImageView android:layout_gravity="center" android:id="@id/transit_mode" android:layout_width="@dimen/qp_action_icon_size" android:layout_height="@dimen/qp_action_icon_size" android:src="@drawable/ic_directions_transit" android:tint="@color/done_text_color_normal" android:alpha="0.38" />
         </FrameLayout>
         <FrameLayout android:id="@id/walking_mode_target" android:layout_width="@dimen/card_action_button_width" android:layout_height="@dimen/card_action_button_height" android:layout_weight="1.0" android:contentDescription="@string/time_to_leave_travel_walking">
-            <ImageView android:layout_gravity="center" android:id="@id/walking_mode" android:layout_width="@dimen/qp_action_icon_size" android:layout_height="@dimen/qp_action_icon_size" android:src="@drawable/ic_directions_walk" android:tint="@android:color/black" android:alpha="0.38" />
+            <ImageView android:layout_gravity="center" android:id="@id/walking_mode" android:layout_width="@dimen/qp_action_icon_size" android:layout_height="@dimen/qp_action_icon_size" android:src="@drawable/ic_directions_walk" android:tint="@color/done_text_color_normal" android:alpha="0.38" />
         </FrameLayout>
         <FrameLayout android:id="@id/biking_mode_target" android:layout_width="@dimen/card_action_button_width" android:layout_height="@dimen/card_action_button_height" android:layout_weight="1.0" android:contentDescription="@string/time_to_leave_travel_biking">
-            <ImageView android:layout_gravity="center" android:id="@id/biking_mode" android:layout_width="@dimen/qp_action_icon_size" android:layout_height="@dimen/qp_action_icon_size" android:src="@drawable/ic_directions_bike" android:tint="@android:color/black" android:alpha="0.38" />
+            <ImageView android:layout_gravity="center" android:id="@id/biking_mode" android:layout_width="@dimen/qp_action_icon_size" android:layout_height="@dimen/qp_action_icon_size" android:src="@drawable/ic_directions_bike" android:tint="@color/done_text_color_normal" android:alpha="0.38" />
         </FrameLayout>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/qp_column_padding" android:paddingTop="@dimen/qp_large_padding" android:paddingRight="@dimen/qp_column_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">

@@ -259,7 +259,7 @@
 
     move-result-object v2
 
-    const v3, -0x50506
+    const v3, -0xcfcfd0
 
     invoke-direct {v0, v2, v3}, Landroid/support/v4/widget/d;-><init>(Landroid/content/Context;I)V
 

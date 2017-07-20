@@ -18,6 +18,6 @@
                 <ImageView android:paddingTop="@dimen/expand_collapse_icon_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_expand_less_grey600_24" />
             </LinearLayout>
         </FrameLayout>
-        <LinearLayout android:orientation="vertical" android:id="@id/conversation_box" android:tag="ve=20356;visibility:hidden" android:background="#fff8f8f8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ConversationBox" />
+        <LinearLayout android:orientation="vertical" android:id="@id/conversation_box" android:tag="ve=20356;visibility:hidden" android:background="@color/lotic_carousel_logo_image_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ConversationBox" />
     </LinearLayout>
 </android.support.v7.widget.CardView>

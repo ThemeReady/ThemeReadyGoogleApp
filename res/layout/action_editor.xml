@@ -9,6 +9,6 @@
             <include android:id="@id/action_card_unlabeled_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/action_card_content" android:layout_alignParentBottom="true" layout="@layout/action_editor_unlabeled_footer" />
             <include android:id="@id/action_card_labeled_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/action_card_content" android:layout_alignParentBottom="true" layout="@layout/action_editor_labeled_footer" />
         </RelativeLayout>
-        <View android:id="@id/scrim" android:background="#4dffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/action_card_header" android:layout_alignBottom="@id/action_editor_clip_wrapper" />
+        <View android:id="@id/scrim" android:background="@color/quick_action_separator_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/action_card_header" android:layout_alignBottom="@id/action_editor_clip_wrapper" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>

@@ -80,7 +80,7 @@
     invoke-virtual {p0, v0}, Lcom/google/android/apps/gsa/assistant/settings/shared/LightBackgroundPreferenceCategory;->setTypeFaceStyle(I)V
 
     .line 15
-    const v0, 0x106000b
+    const v0, 0x7f0d0071 # @color/card_bg
 
     invoke-virtual {p0, v0}, Lcom/google/android/apps/gsa/assistant/settings/shared/LightBackgroundPreferenceCategory;->setBackgroundColor(I)V
 

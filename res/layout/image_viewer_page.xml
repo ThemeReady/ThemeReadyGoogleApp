@@ -2,7 +2,7 @@
 <com.google.android.apps.gsa.plugins.images.viewer.ImageViewerPage android:id="@id/image_viewer_page_container" android:tag="ve=22806;track:drag" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout android:orientation="vertical" android:id="@id/image_viewer_page_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <LinearLayout android:orientation="vertical" android:id="@id/image_viewer_details_shade" android:background="#ff000000" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/image_viewer_details_shade" android:background="@color/quantum_greyblack1000" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
         <ImageView android:layout_gravity="top" android:id="@id/image_viewer_image" android:layout_width="fill_parent" android:layout_height="300.0dip" android:scaleType="matrix" android:importantForAccessibility="no" />
         <include layout="@layout/image_viewer_details" />
     </FrameLayout>

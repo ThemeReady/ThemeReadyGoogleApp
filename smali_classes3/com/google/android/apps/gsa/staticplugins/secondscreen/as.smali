@@ -822,7 +822,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ag;->bxU:I
+    sget v2, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ag;->jbe:I # @color/qp_status_none
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
