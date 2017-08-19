@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:tag="ve=20369;track:click" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale" style="@style/ResultContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_result_margin_start" layout="@layout/icon_with_badge" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/StandardResultContent">
+            <TextView android:ellipsize="end" android:id="@id/result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ipa_title_margin_bottom" android:maxLines="1" style="@style/PrimaryText" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@id/result_metadata_left_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/SecondaryText" />
+                <ImageView android:id="@id/result_metadata_image" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:ellipsize="end" android:id="@id/result_metadata_right_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/SecondaryText" />
+            </LinearLayout>
+            <TextView android:id="@id/result_metadata_bottom_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/TimestampText" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/frame_on_right" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

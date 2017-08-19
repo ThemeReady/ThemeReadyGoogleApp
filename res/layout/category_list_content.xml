@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@id/category_tile_recycler" android:tag="ve=35091" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.google.android.libraries.material.progress.MaterialProgressBar android:id="@id/spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" style="@style/Widget.GoogleLib.Progress.Circular.Indeterminate.Large" />
+    <ViewStub android:id="@id/category_list_error_stub" android:layout="@layout/agent_directory_error_content" android:inflatedId="@id/category_list_error_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

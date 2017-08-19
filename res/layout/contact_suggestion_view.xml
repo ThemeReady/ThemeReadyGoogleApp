@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.gsa.searchbox.ui.suggestions.views.ContactSuggestionView android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/contact_suggestion_container" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/core_suggestion_height" android:layout_alignParentTop="true" android:animateLayoutChanges="true">
+        <com.google.android.apps.gsa.searchbox.ui.suggestions.views.SuggestionIconView android:id="@id/label_icon" android:padding="8.0dip" android:visibility="invisible" android:layout_width="56.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" android:layout_alignParentStart="true" />
+        <LinearLayout android:id="@id/contact_expand_icon_container" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/contact_expand_icon" android:padding="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_keyboard_arrow_down_grey600_24" />
+            <ImageView android:id="@id/contact_collapse_icon" android:padding="11.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_keyboard_arrow_up_grey600_24" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/text_frame" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:animateLayoutChanges="true" android:layout_toStartOf="@id/contact_expand_icon_container" android:layout_toEndOf="@id/label_icon">
+            <TextView android:ellipsize="end" android:id="@id/text_1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/LineOneText" />
+            <TextView android:ellipsize="end" android:id="@id/text_2" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/LineTwoText" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/contact_action_row_stub" android:layout="@layout/contact_action_row" android:inflatedId="@id/contact_action_row_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/contact_suggestion_container" />
+    <View android:id="@id/suggestion_divider" android:background="@color/searchbox_suggestion_divider_background" android:layout_width="fill_parent" android:layout_height="@dimen/suggestion_divider_height" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/suggestion_divider_margin_start" />
+</com.google.android.apps.gsa.searchbox.ui.suggestions.views.ContactSuggestionView>

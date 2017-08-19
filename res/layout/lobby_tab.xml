@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/now_stream_tab" android:paddingTop="@dimen/lobby_tab_padding_top" android:paddingBottom="@dimen/lobby_tab_padding_bottom" android:layout_width="0.0px" android:layout_height="@dimen/lobby_tab_height" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|top" android:id="@id/now_stream_tab_icon" android:layout_width="@dimen/lobby_tab_icon_size" android:layout_height="@dimen/lobby_tab_icon_size" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <View android:layout_gravity="bottom|center" android:id="@id/update_indicator" android:background="@drawable/tab_update_indicator" android:visibility="gone" android:layout_width="@dimen/lobby_tab_update_indicator_size" android:layout_height="@dimen/lobby_tab_update_indicator_size" android:contentDescription="@null" />
+</FrameLayout>

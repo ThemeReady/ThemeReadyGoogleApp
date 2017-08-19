@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/chatui_suggestion_scroller" android:paddingLeft="@dimen/chatui_horizontal_margin" android:paddingTop="@dimen/chatui_item_gap_top" android:paddingRight="@dimen/chatui_horizontal_margin" android:paddingBottom="@dimen/chatui_suggestion_scroll_padding" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/chatui_suggestion_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</FrameLayout>

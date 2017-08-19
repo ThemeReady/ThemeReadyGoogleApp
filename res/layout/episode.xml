@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_marginLeft="24.0dip" android:layout_marginStart="24.0dip" style="@style/horizontal_bar" />
+    <RelativeLayout android:id="@id/episode_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/bullet" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:layout_alignParentRight="true" android:contentDescription="@string/play_this_episode" android:layout_marginStart="6.0dip" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/bullet_image" android:background="@drawable/ripple_dark" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/bullet" android:scaleType="centerInside" />
+        </FrameLayout>
+        <TextView android:ellipsize="marquee" android:id="@id/episode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="4.0dip" android:maxLines="1" android:layout_toLeftOf="@id/bullet" android:layout_alignParentLeft="true" android:textDirection="locale" android:layout_marginStart="24.0dip" android:layout_toStartOf="@id/bullet" android:layout_alignParentStart="true" style="@style/episode_title" />
+        <TextView android:id="@id/episode_date_and_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_toLeftOf="@id/bullet" android:layout_below="@id/episode_title" android:layout_alignParentLeft="true" android:textDirection="locale" android:layout_marginStart="24.0dip" android:layout_toStartOf="@id/bullet" android:layout_alignParentStart="true" style="@style/episode_subtitle" />
+    </RelativeLayout>
+</LinearLayout>

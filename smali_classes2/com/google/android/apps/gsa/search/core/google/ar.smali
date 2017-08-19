@@ -1,0 +1,173 @@
+.class public final Lcom/google/android/apps/gsa/search/core/google/ar;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ldagger/internal/Factory;
+
+
+# instance fields
+.field public final bIC:Ljavax/inject/Provider;
+
+.field public final bon:Ljavax/inject/Provider;
+
+.field public final brT:Ljavax/inject/Provider;
+
+.field public final cLN:Ljavax/inject/Provider;
+
+.field public final cwb:Ljavax/inject/Provider;
+
+.field public final cwi:Ljavax/inject/Provider;
+
+.field public final czl:Ljavax/inject/Provider;
+
+.field public final dJn:Ljavax/inject/Provider;
+
+.field public final fks:Ldagger/MembersInjector;
+
+.field public final fkt:Ljavax/inject/Provider;
+
+
+# direct methods
+.method public constructor <init>(Ldagger/MembersInjector;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->fks:Ldagger/MembersInjector;
+
+    .line 3
+    iput-object p2, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->dJn:Ljavax/inject/Provider;
+
+    .line 4
+    iput-object p3, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->cwb:Ljavax/inject/Provider;
+
+    .line 5
+    iput-object p4, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->bon:Ljavax/inject/Provider;
+
+    .line 6
+    iput-object p5, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->bIC:Ljavax/inject/Provider;
+
+    .line 7
+    iput-object p6, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->cLN:Ljavax/inject/Provider;
+
+    .line 8
+    iput-object p7, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->cwi:Ljavax/inject/Provider;
+
+    .line 9
+    iput-object p8, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->czl:Ljavax/inject/Provider;
+
+    .line 10
+    iput-object p9, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->brT:Ljavax/inject/Provider;
+
+    .line 11
+    iput-object p10, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->fkt:Ljavax/inject/Provider;
+
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 11
+
+    .prologue
+    .line 13
+    .line 14
+    iget-object v10, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->fks:Ldagger/MembersInjector;
+
+    new-instance v0, Lcom/google/android/apps/gsa/search/core/google/aq;
+
+    iget-object v1, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->dJn:Ljavax/inject/Provider;
+
+    .line 15
+    invoke-interface {v1}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/apps/gsa/search/core/google/ao;
+
+    iget-object v2, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->cwb:Ljavax/inject/Provider;
+
+    .line 16
+    invoke-interface {v2}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/apps/gsa/search/core/config/x;
+
+    iget-object v3, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->bon:Ljavax/inject/Provider;
+
+    .line 17
+    invoke-interface {v3}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/android/apps/gsa/search/core/config/GsaConfigFlags;
+
+    iget-object v4, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->bIC:Ljavax/inject/Provider;
+
+    .line 18
+    invoke-interface {v4}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/google/android/apps/gsa/p/c/i;
+
+    iget-object v5, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->cLN:Ljavax/inject/Provider;
+
+    .line 19
+    invoke-interface {v5}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/google/android/apps/gsa/search/core/util/ap;
+
+    iget-object v6, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->cwi:Ljavax/inject/Provider;
+
+    .line 20
+    invoke-static {v6}, Ldagger/internal/DoubleCheck;->lazy(Ljavax/inject/Provider;)Ldagger/Lazy;
+
+    move-result-object v6
+
+    iget-object v7, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->czl:Ljavax/inject/Provider;
+
+    .line 21
+    invoke-interface {v7}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lcom/google/android/apps/gsa/search/core/preferences/SharedPreferencesExt;
+
+    iget-object v8, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->brT:Ljavax/inject/Provider;
+
+    .line 22
+    invoke-interface {v8}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lcom/google/android/apps/gsa/search/core/preferences/SharedPreferencesExt;
+
+    iget-object v9, p0, Lcom/google/android/apps/gsa/search/core/google/ar;->fkt:Ljavax/inject/Provider;
+
+    .line 23
+    invoke-static {v9}, Ldagger/internal/DoubleCheck;->lazy(Ljavax/inject/Provider;)Ldagger/Lazy;
+
+    move-result-object v9
+
+    invoke-direct/range {v0 .. v9}, Lcom/google/android/apps/gsa/search/core/google/aq;-><init>(Lcom/google/android/apps/gsa/search/core/google/ao;Lcom/google/android/apps/gsa/search/core/config/x;Lcom/google/android/apps/gsa/search/core/config/GsaConfigFlags;Lcom/google/android/apps/gsa/p/c/i;Lcom/google/android/apps/gsa/search/core/util/ap;Ldagger/Lazy;Lcom/google/android/apps/gsa/search/core/preferences/SharedPreferencesExt;Lcom/google/android/apps/gsa/search/core/preferences/SharedPreferencesExt;Ldagger/Lazy;)V
+
+    .line 24
+    invoke-static {v10, v0}, Ldagger/internal/MembersInjectors;->injectMembers(Ldagger/MembersInjector;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/apps/gsa/search/core/google/aq;
+
+    .line 25
+    return-object v0
+.end method

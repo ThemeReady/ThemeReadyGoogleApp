@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/setupwizard_optin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/setup_wizard_content_frame">
+        <TextView android:id="@id/intro" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setup_wizard_description" />
+        <TextView android:id="@id/settings_prelude" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setup_wizard_content_paragraph_margin_top" style="@style/setup_wizard_description" />
+        <LinearLayout android:orientation="vertical" android:id="@id/settings_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/settings_disclaimer_link" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setup_wizard_content_paragraph_margin_top" style="@style/setup_wizard_link" />
+        <TextView android:id="@id/outro" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setup_wizard_content_paragraph_margin_top" style="@style/setup_wizard_description" />
+        <RadioGroup android:id="@id/optin_options" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/opt_in_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/opt_in_agree_button" style="@style/setup_wizard_radiobutton" />
+            <RadioButton android:id="@id/maybe_later_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opt_in_not_now_button" style="@style/setup_wizard_radiobutton" />
+        </RadioGroup>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="top" android:id="@id/progress_bar" android:tag="stickyProgress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setup_wizard_progress_bar_margin_top" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal" />
+</FrameLayout>

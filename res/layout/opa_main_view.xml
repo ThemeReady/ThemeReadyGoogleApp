@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/chrome_os_caption_bar_view_stub" android:layout="@layout/chrome_os_caption_bar" android:inflatedId="@id/chrome_os_caption_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.google.android.apps.gsa.staticplugins.opa.ui.OpaCoordinatorLayout android:id="@id/opa_expanded_container" android:tag="ve=29382" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/opa_main_view_inner" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/opa_chat_underlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include layout="@layout/opa_chat_header" />
+                <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/opa_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.apps.gsa.staticplugins.opa.ui.OpaRecyclerView android:layout_gravity="bottom" android:id="@id/opa_chat_container" android:tag="ve=27049" android:background="@android:color/transparent" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="bottom" android:id="@id/opa_search_plate_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/chatui_padding_bottom" />
+                <ImageButton android:layout_gravity="center|right|top" android:id="@id/opa_menu" android:tag="ve=27100;track:click" android:background="@android:color/transparent" android:paddingLeft="@dimen/chatui_menu_padding_sides" android:paddingTop="@dimen/chatui_menu_padding_topbottom" android:paddingRight="@dimen/chatui_menu_padding_sides" android:paddingBottom="@dimen/chatui_menu_padding_topbottom" android:nextFocusLeft="@id/opa_menu" android:nextFocusRight="@id/opa_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_more_vert_grey600_24" android:contentDescription="@string/opa_menu_content_description" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/opa_history_expander" android:tag="ve=33259;track:click" android:visibility="gone" android:layout_width="@dimen/chatui_history_expander_size" android:layout_height="@dimen/chatui_history_expander_size" android:src="@drawable/quantum_ic_keyboard_arrow_up_white_24" android:scaleType="center" android:contentDescription="@string/opa_history_expander_description" />
+            <include layout="@layout/opa_contextual_cards_drawer" />
+            <FrameLayout android:id="@id/opa_chat_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/opa_lock_icon" android:paddingTop="@dimen/chatui_lock_icon_padding" android:paddingBottom="@dimen/chatui_lock_icon_padding" android:visibility="gone" android:layout_width="@dimen/chatui_lock_icon_size" android:layout_height="@dimen/chatui_lock_icon_size" android:src="@drawable/quantum_ic_lock_black_24" android:contentDescription="@string/opa_lock_icon_description" android:alpha="0.54" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/opa_fab_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/logo_view_margin_bottom" />
+        </com.google.android.apps.gsa.staticplugins.opa.ui.OpaCoordinatorLayout>
+        <ViewStub android:id="@id/opa_collapsed_container_view_stub" android:layout="@layout/opa_collapsed_view" android:inflatedId="@id/opa_collapsed_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

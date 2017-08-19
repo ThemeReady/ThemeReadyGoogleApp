@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/podcast_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="12.0dip" android:maxLines="@integer/podcast_description_default_lines" style="@style/podcast_description" />
+    <TextView android:id="@id/podcast_description_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/more_description" android:importantForAccessibility="no" style="@style/more_description" />
+    <View android:id="@id/podcast_description_separator" android:layout_marginTop="16.0dip" style="@style/horizontal_bar" />
+</LinearLayout>

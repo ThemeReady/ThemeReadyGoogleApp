@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/logging_images_reqestor" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="28.0dip" android:text="@string/improve_visual_search_title" android:fontFamily="roboto-regular" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="28.0dip">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/log_images_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:buttonTint="#ff4285f4" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/improve_visual_search_message" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/change_later_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="28.0dip" android:text="@string/improve_visual_search_change_later" android:fontFamily="roboto-regular" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff4285f4" android:gravity="center" android:layout_gravity="right" android:id="@id/okay_button" android:layout_width="62.0dip" android:layout_height="40.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/okay" android:fontFamily="roboto-medium" />
+    </FrameLayout>
+</LinearLayout>

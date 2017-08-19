@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale" style="@style/ResultContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/three_lines_result_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StandardResultContent">
+        <FrameLayout android:gravity="center" android:id="@id/left_frame_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ipa_left_frame_margin_end" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/result_details_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/left_frame_container">
+            <TextView android:ellipsize="end" android:id="@id/result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ipa_title_margin_bottom" android:maxLines="1" style="@style/PrimaryText" />
+            <TextView android:ellipsize="end" android:id="@id/result_second_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/SecondaryText" />
+            <TextView android:ellipsize="end" android:id="@id/result_third_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/SecondaryText" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

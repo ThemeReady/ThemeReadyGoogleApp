@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_vertical" android:layout_gravity="end|center|top" android:id="@id/top_right_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_result_padding_top_bottom" android:layout_marginEnd="@dimen/result_padding_start_end" style="@style/TimestampText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

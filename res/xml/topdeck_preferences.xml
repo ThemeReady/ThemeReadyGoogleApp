@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:persistent="true" android:title="@string/topdeck_show_all_cards_title" android:key="topdeck_show_all_cards" android:summary="@string/topdeck_show_all_cards_summary" android:defaultValue="false" />
+</PreferenceScreen>

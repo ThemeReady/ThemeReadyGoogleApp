@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/quantum_grey100" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/capability_content" android:tag="ve=37151" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/capability_banner_stub" android:layout="@layout/banner_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/capability_search_entrypoint_stub" android:layout="@layout/capability_search_entrypoint" android:inflatedId="@id/capability_search_entrypoint" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/capability_top_divider" android:background="@color/quantum_grey300" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+            <ViewStub android:id="@id/agent_filter_holder_stub" android:layout="@layout/agent_filter_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+            <ViewStub android:id="@id/suggestion_group" android:layout="@layout/suggestion_group" android:inflatedId="@id/suggestion_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/agent_category_shortcuts_holder_stub" android:layout="@layout/agent_category_shortcuts_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/agent_group_holder" android:tag="ve=35303" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <com.google.android.libraries.material.progress.MaterialProgressBar android:id="@id/capability_loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" style="@style/Widget.GoogleLib.Progress.Circular.Indeterminate.Large" />
+    <ViewStub android:id="@id/capability_error_stub" android:layout="@layout/agent_directory_error_content" android:inflatedId="@id/capability_error_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

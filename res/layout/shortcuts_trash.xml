@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/trash_view" android:clipChildren="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/trash_circle" android:background="@drawable/shortcuts_trash_circle" android:layout_width="@dimen/shortcuts_trash_circle_diameter" android:layout_height="@dimen/shortcuts_trash_circle_diameter" android:layout_marginBottom="@dimen/shortcuts_trash_margin_bottom" android:elevation="4.0dip">
+        <TextView android:textAppearance="@style/TextAppearance.Trash" android:layout_gravity="center" android:id="@id/trash_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trash_remove" android:drawableTop="@drawable/quantum_ic_close_white_24" android:elevation="4.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.Trash" android:layout_gravity="center" android:id="@id/trash_removed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trash_removed" android:alpha="0.0" android:elevation="4.0dip" />
+    </FrameLayout>
+</FrameLayout>

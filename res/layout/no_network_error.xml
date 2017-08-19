@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.gsa.opaonboarding.ui.ErrorLayout android:tag="ve=36598" android:layout_width="fill_parent" android:layout_height="fill_parent" errorlayout:title="@string/opa_error_network_title" errorlayout:message="@string/opa_error_network_message" errorlayout:footerType="actionButton" errorlayout:actionText="@string/opa_error_network_button"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:errorlayout="http://schemas.android.com/apk/res-auto" />

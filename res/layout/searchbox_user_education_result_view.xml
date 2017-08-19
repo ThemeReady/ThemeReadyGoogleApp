@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:tag="ve=28794" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale" style="@style/ResultContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/user_education_layout" android:padding="@dimen/uo_result_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/user_education_title" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uo_title_margin_top_bottom" android:layout_marginBottom="@dimen/uo_title_margin_top_bottom" style="@style/UoTitleText" />
+        <TextView android:id="@id/user_education_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uo_text_margin_bottom" style="@style/UoBodyText" />
+        <Button android:layout_gravity="right" android:id="@id/user_education_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Button" style="@style/UoButton" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

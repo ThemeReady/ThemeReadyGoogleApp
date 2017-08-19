@@ -1,0 +1,309 @@
+.class public final Lcom/google/android/apps/gsa/staticplugins/dc/do;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ldagger/internal/Factory;
+
+
+# instance fields
+.field public final brU:Ljavax/inject/Provider;
+
+.field public final cFh:Ljavax/inject/Provider;
+
+.field public final cFp:Ljavax/inject/Provider;
+
+.field public final cwn:Ljavax/inject/Provider;
+
+.field public final cyW:Ljavax/inject/Provider;
+
+.field public final czU:Ljavax/inject/Provider;
+
+.field public final fJZ:Ljavax/inject/Provider;
+
+.field public final fKa:Ljavax/inject/Provider;
+
+.field public final fOS:Ljavax/inject/Provider;
+
+.field public final fhQ:Ljavax/inject/Provider;
+
+.field public final frt:Ljavax/inject/Provider;
+
+.field public final frv:Ljavax/inject/Provider;
+
+.field public final giU:Ljavax/inject/Provider;
+
+.field public final giW:Ljavax/inject/Provider;
+
+.field public final gjW:Ljavax/inject/Provider;
+
+.field public final jNk:Ljavax/inject/Provider;
+
+.field public final oCx:Ljavax/inject/Provider;
+
+
+# direct methods
+.method public constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    .locals 1
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->fOS:Ljavax/inject/Provider;
+
+    .line 3
+    iput-object p2, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->fKa:Ljavax/inject/Provider;
+
+    .line 4
+    iput-object p3, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->cwn:Ljavax/inject/Provider;
+
+    .line 5
+    iput-object p4, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->gjW:Ljavax/inject/Provider;
+
+    .line 6
+    iput-object p5, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->brU:Ljavax/inject/Provider;
+
+    .line 7
+    iput-object p6, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->cFp:Ljavax/inject/Provider;
+
+    .line 8
+    iput-object p7, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->frv:Ljavax/inject/Provider;
+
+    .line 9
+    iput-object p8, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->jNk:Ljavax/inject/Provider;
+
+    .line 10
+    iput-object p9, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->czU:Ljavax/inject/Provider;
+
+    .line 11
+    iput-object p10, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->cFh:Ljavax/inject/Provider;
+
+    .line 12
+    iput-object p11, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->oCx:Ljavax/inject/Provider;
+
+    .line 13
+    iput-object p12, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->giU:Ljavax/inject/Provider;
+
+    .line 14
+    iput-object p13, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->frt:Ljavax/inject/Provider;
+
+    .line 15
+    iput-object p14, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->giW:Ljavax/inject/Provider;
+
+    .line 16
+    move-object/from16 v0, p15
+
+    iput-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->fJZ:Ljavax/inject/Provider;
+
+    .line 17
+    move-object/from16 v0, p16
+
+    iput-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->fhQ:Ljavax/inject/Provider;
+
+    .line 18
+    move-object/from16 v0, p17
+
+    iput-object v0, p0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->cyW:Ljavax/inject/Provider;
+
+    .line 19
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 19
+
+    .prologue
+    .line 20
+    .line 21
+    new-instance v1, Lcom/google/android/apps/gsa/staticplugins/dc/dd;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->fOS:Ljavax/inject/Provider;
+
+    .line 22
+    invoke-interface {v2}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/apps/gsa/search/core/state/c;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->fKa:Ljavax/inject/Provider;
+
+    .line 23
+    invoke-interface {v3}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/android/apps/gsa/search/core/state/az;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->cwn:Ljavax/inject/Provider;
+
+    .line 24
+    invoke-static {v4}, Ldagger/internal/DoubleCheck;->lazy(Ljavax/inject/Provider;)Ldagger/Lazy;
+
+    move-result-object v4
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->gjW:Ljavax/inject/Provider;
+
+    .line 25
+    invoke-interface {v5}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/google/android/apps/gsa/search/core/state/gh;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->brU:Ljavax/inject/Provider;
+
+    .line 26
+    invoke-static {v6}, Ldagger/internal/DoubleCheck;->lazy(Ljavax/inject/Provider;)Ldagger/Lazy;
+
+    move-result-object v6
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->cFp:Ljavax/inject/Provider;
+
+    .line 27
+    invoke-interface {v7}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lcom/google/android/apps/gsa/search/core/state/md;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->frv:Ljavax/inject/Provider;
+
+    .line 28
+    invoke-interface {v8}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lcom/google/android/apps/gsa/search/core/state/gj;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->jNk:Ljavax/inject/Provider;
+
+    .line 29
+    invoke-static {v9}, Ldagger/internal/DoubleCheck;->lazy(Ljavax/inject/Provider;)Ldagger/Lazy;
+
+    move-result-object v9
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->czU:Ljavax/inject/Provider;
+
+    .line 30
+    invoke-interface {v10}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Lcom/google/android/apps/gsa/search/core/service/y;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->cFh:Ljavax/inject/Provider;
+
+    .line 31
+    invoke-interface {v11}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Lcom/google/android/apps/gsa/shared/util/concurrent/bc;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->oCx:Ljavax/inject/Provider;
+
+    .line 32
+    invoke-static {v12}, Ldagger/internal/DoubleCheck;->lazy(Ljavax/inject/Provider;)Ldagger/Lazy;
+
+    move-result-object v12
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->giU:Ljavax/inject/Provider;
+
+    .line 33
+    invoke-static {v13}, Ldagger/internal/DoubleCheck;->lazy(Ljavax/inject/Provider;)Ldagger/Lazy;
+
+    move-result-object v13
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->frt:Ljavax/inject/Provider;
+
+    .line 34
+    invoke-interface {v14}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v14
+
+    check-cast v14, Lcom/google/android/apps/gsa/search/core/state/lu;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->giW:Ljavax/inject/Provider;
+
+    .line 35
+    invoke-interface {v15}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v15
+
+    check-cast v15, Lcom/google/android/apps/gsa/search/core/state/sk;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->fJZ:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    .line 36
+    invoke-interface/range {v16 .. v16}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v16
+
+    check-cast v16, Lcom/google/android/apps/gsa/search/core/state/sc;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->fhQ:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    .line 37
+    invoke-interface/range {v17 .. v17}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v17
+
+    check-cast v17, Lcom/google/android/apps/gsa/search/core/config/GsaConfigFlags;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/google/android/apps/gsa/staticplugins/dc/do;->cyW:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    .line 38
+    invoke-static/range {v18 .. v18}, Ldagger/internal/DoubleCheck;->lazy(Ljavax/inject/Provider;)Ldagger/Lazy;
+
+    move-result-object v18
+
+    invoke-direct/range {v1 .. v18}, Lcom/google/android/apps/gsa/staticplugins/dc/dd;-><init>(Lcom/google/android/apps/gsa/search/core/state/c;Lcom/google/android/apps/gsa/search/core/state/az;Ldagger/Lazy;Lcom/google/android/apps/gsa/search/core/state/gh;Ldagger/Lazy;Lcom/google/android/apps/gsa/search/core/state/md;Lcom/google/android/apps/gsa/search/core/state/gj;Ldagger/Lazy;Lcom/google/android/apps/gsa/search/core/service/y;Lcom/google/android/apps/gsa/shared/util/concurrent/bc;Ldagger/Lazy;Ldagger/Lazy;Lcom/google/android/apps/gsa/search/core/state/lu;Lcom/google/android/apps/gsa/search/core/state/sk;Lcom/google/android/apps/gsa/search/core/state/sc;Lcom/google/android/apps/gsa/search/core/config/GsaConfigFlags;Ldagger/Lazy;)V
+
+    .line 39
+    return-object v1
+.end method

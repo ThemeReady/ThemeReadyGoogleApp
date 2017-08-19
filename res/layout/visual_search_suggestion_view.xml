@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/suggestion_container" android:tag="ve=32994;track:click" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:foreground="@drawable/suggestion_card_background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/suggestion_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/suggestion_text" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="@dimen/thumbnail_width" android:layout_height="@dimen/card_suggestion_text_height" android:layout_marginTop="@dimen/thumbnail_height" android:maxLines="3" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/suggestion_thumbnail" android:layout_width="@dimen/thumbnail_width" android:layout_height="@dimen/thumbnail_height" android:scaleType="centerCrop" />
+        <FrameLayout android:layout_gravity="center|right|top" android:id="@id/details_button" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/details_button_description">
+            <ImageView android:background="@drawable/details_button_background" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/quantum_ic_more_vert_white_48" android:scaleType="centerInside" android:tint="#ff444444" />
+        </FrameLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>
