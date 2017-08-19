@@ -2,5 +2,5 @@
 <LinearLayout android:orientation="vertical" android:id="@id/bottom_navigation_bar" android:layout_width="@dimen/monet_ignore_layout" android:layout_height="@dimen/monet_ignore_layout"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <View android:background="@drawable/lobby_tab_strip_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/lobby_tab_strip_shadow_height" />
-    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/lobby_tabs" android:tag="ve=39081" android:background="@color/quantum_white_100" android:paddingLeft="@dimen/lobby_tabs_padding_horizontal" android:paddingRight="@dimen/lobby_tabs_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/lobby_tabs" android:tag="ve=39081" android:background="@color/lotic_carousel_logo_image_background" android:paddingLeft="@dimen/lobby_tabs_padding_horizontal" android:paddingRight="@dimen/lobby_tabs_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </LinearLayout>

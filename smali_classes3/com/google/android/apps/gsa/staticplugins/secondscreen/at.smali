@@ -870,7 +870,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ah;->bwO:I
+    sget v2, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ah;->jig:I
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2320,7 +2320,7 @@
 
     move-result-object v3
 
-    sget v4, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ah;->bwO:I
+    sget v4, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ah;->jig:I # @color/qp_status_none
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3568,7 +3568,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ah;->jig:I
+    sget v1, Lcom/google/android/apps/gsa/staticplugins/secondscreen/ah;->jig:I # @color/qp_status_none
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 

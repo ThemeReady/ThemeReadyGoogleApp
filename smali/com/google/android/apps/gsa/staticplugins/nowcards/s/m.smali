@@ -1200,7 +1200,7 @@
 
     move-result-object v1
 
-    const v4, 0x106000c
+    const v4, 0x7f0c006b # @color/bright_foreground_material_light
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
 

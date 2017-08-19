@@ -1248,7 +1248,7 @@
     iget-object v7, v3, Lcom/google/assistant/f/a/ea;->gME:Ljava/lang/String;
 
     .line 159
-    const v8, 0x106000b
+    const v8, 0x7f0c006a # @color/bright_foreground_material_dark
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

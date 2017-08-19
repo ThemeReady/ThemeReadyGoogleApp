@@ -31,12 +31,12 @@
         </android.support.design.widget.TextInputLayout>
         <ImageButton android:layout_gravity="center|right|top" android:id="@id/assistant_settings_uda_trigger_phrase_mic_4" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/quantum_ic_mic_grey600_24" />
     </FrameLayout>
-    <TextView android:textSize="15.0sp" android:textColor="@color/quantum_grey600" android:gravity="center_vertical" android:id="@id/example_innvocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_settings_uda_example_innvocation" android:layout_marginStart="12.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/card_title_text" android:gravity="center_vertical" android:id="@id/example_innvocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_settings_uda_example_innvocation" android:layout_marginStart="12.0dip" />
     <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
         <android.support.design.widget.TextInputLayout android:id="@id/assistant_settings_uda_actual_query_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <android.support.v7.widget.AppCompatAutoCompleteTextView android:id="@id/assistant_settings_uda_actual_query_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/user_defined_action_target_command_hint" android:minLines="1" />
         </android.support.design.widget.TextInputLayout>
         <ImageButton android:layout_gravity="center|right|top" android:id="@id/assistant_settings_uda_actual_query_mic" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/quantum_ic_mic_grey600_24" />
     </FrameLayout>
-    <TextView android:textSize="15.0sp" android:textColor="@color/quantum_grey600" android:gravity="center_vertical" android:id="@id/example_target_command" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_settings_uda_example_voice_command" android:layout_marginStart="12.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/card_title_text" android:gravity="center_vertical" android:id="@id/example_target_command" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_settings_uda_example_voice_command" android:layout_marginStart="12.0dip" />
 </LinearLayout>

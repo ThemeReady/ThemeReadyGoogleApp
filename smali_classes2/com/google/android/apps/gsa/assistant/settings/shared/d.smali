@@ -154,7 +154,7 @@
 
     move-result-object v0
 
-    const v1, 0x106000b
+    const v1, 0x7f0c0072 # @color/card_bg
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 

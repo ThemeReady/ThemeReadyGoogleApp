@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="@dimen/chatui_contextual_cards_loading_height" android.support.v7.cardview:cardBackgroundColor="@color/quantum_white_100" android.support.v7.cardview:cardElevation="@dimen/chatui_contextual_card_elevation"
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="@dimen/chatui_contextual_cards_loading_height" android.support.v7.cardview:cardBackgroundColor="@color/card_bg" android.support.v7.cardview:cardElevation="@dimen/chatui_contextual_card_elevation"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android.support.v7.cardview="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="horizontal" android:id="@id/opa_contextual_cards_loading_bars" android:padding="@dimen/chatui_contextual_cards_placeholder_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">

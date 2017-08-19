@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+    <ScrollView android:background="@color/lotic_carousel_logo_image_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
         <LinearLayout android:orientation="vertical" android:id="@id/assistant_settings_payments_address_form" android:paddingBottom="@dimen/assistant_settings_address_form_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/assistant_settings_address_form_margin" android:layout_marginRight="@dimen/assistant_settings_address_form_margin">
             <com.google.android.apps.gsa.assistant.settings.payments.EditAddressLayout android:orientation="vertical" android:id="@id/assistant_settings_payments_address_widget_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         </LinearLayout>

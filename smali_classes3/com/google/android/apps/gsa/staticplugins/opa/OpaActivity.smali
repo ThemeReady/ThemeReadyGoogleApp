@@ -2246,7 +2246,7 @@
 
     move-result-object v3
 
-    const v4, 0x106000c
+    const v4, 0x7f0c01e9 # @color/overlay_dark_background
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 

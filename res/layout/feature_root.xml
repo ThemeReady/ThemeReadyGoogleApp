@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:gravity="bottom" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<FrameLayout android:gravity="bottom" android:background="@color/lotic_carousel_logo_image_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:gravity="bottom" android:id="@id/main_content_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_overlay_height" />
+    <FrameLayout android:gravity="bottom" android:id="@id/main_content_container" android:background="@color/lotic_carousel_logo_image_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_overlay_height" />
     <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:layout_gravity="bottom" android:id="@id/playback_panel" android:layout_width="fill_parent" android:layout_height="@dimen/playback_panel_height" />
     <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@id/search_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </FrameLayout>

@@ -2,5 +2,5 @@
 <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="@dimen/screenshot_width" android:layout_height="wrap_content" android:elevation="2.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:id="@id/header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_icon" android:layout_marginEnd="@dimen/query_icon_padding" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff444444" android:ellipsize="end" android:id="@id/header_query" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/max_query_width" android:lines="1" android:fontFamily="sans-serif-medium" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/tutorial_card_title" android:ellipsize="end" android:id="@id/header_query" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/max_query_width" android:lines="1" android:fontFamily="sans-serif-medium" />
 </LinearLayout>

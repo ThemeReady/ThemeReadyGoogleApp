@@ -10,7 +10,7 @@
     <ImageView android:id="@id/opa_error_illustration" android:layout_width="fill_parent" android:layout_height="@dimen/opa_error_illustration_height" android:layout_marginTop="@dimen/opa_error_content_separator" />
     <com.google.android.apps.gsa.shared.ui.SquareFrameLayout android:id="@id/opa_error_video_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/opa_error_video_horizontal_margin" android:layout_marginTop="@dimen/opa_error_content_separator" android:layout_marginRight="@dimen/opa_error_video_horizontal_margin">
         <VideoView android:id="@id/opa_error_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-        <FrameLayout android:id="@id/opa_error_video_progress_overlay" android:background="@color/quantum_white_100" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/opa_error_video_progress_overlay" android:background="@color/lotic_carousel_logo_image_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <com.google.android.libraries.material.progress.MaterialProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
         </FrameLayout>
     </com.google.android.apps.gsa.shared.ui.SquareFrameLayout>

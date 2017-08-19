@@ -301,7 +301,7 @@
 
     .prologue
     .line 69
-    const v0, 0x106000b
+    const v0, 0x7f0c0330 # @color/quantum_pink500 or ffe91e63
 
     return v0
 .end method
